@@ -4,14 +4,68 @@ body{
     text-align: center;
     font-family: -apple-system;
     padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow-x: hidden;
 }
 h1{
     font-size: 45px;
 }
-h2{
-    font-weight: 300;
-    margin-top: -30px;
+/* Navbar */
+.navbar{
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
 }
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.leftItem{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+.rightItem {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 3px;
+    text-decoration: none;
+}
+.subtitle{
+    font-weight: 400;
+    margin-top: -30px;
+    font-size: 22px;
+}
+.footer {
+    font-size: 15px;
+    color: #474747;
+    text-decoration: none;
+    text-align: center;
+}
+ion-icon {
+    font-size: 26px;
+    font-weight: bold;
+  }
+/*boxes*/
+.box{
+    background-color: #f2f2f2;
+    text-align: left;
+    text-decoration: none;
+    text-emphasis: none;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    padding-left: 2%;
+    padding-top: 1px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
 @media
 (prefers-color-scheme: dark) {
 
@@ -19,7 +73,38 @@ h2{
         background-color: #1C1C1E;
         color: white;
     }
+    .box{
+        background-color: #333333;
+        color: white;
+    }
+    p{
+        background-color: #1C1C1E;
+    }
+    .navbar a{
+        color: white;
+    }
     #transaction {
         background-color: #191919;
         box-shadow: none;
     }
+}
+@media (max-width: 600px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media (max-width: 350px) {
+    p{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 37px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .navbar{
+        font-size: 12px;
+    }
+}
