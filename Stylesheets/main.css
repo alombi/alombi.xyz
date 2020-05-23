@@ -104,13 +104,16 @@ ion-icon {
 }
 .stack {
     white-space: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  overflow-y: hidden;
-  height:150px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: hidden;
+    height:150px;
 }
-
+.stack::-webkit-scrollbar { 
+    /* This is the magic bit */
+    display: none;
+  }
 @media
 (prefers-color-scheme: dark) {
 
