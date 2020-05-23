@@ -71,7 +71,7 @@ ion-icon {
     padding-top: -5%;
     border-radius: 10px;
     border-width: 1px;
-    border-color: #333333;
+    border-color: #f2f2f2;
     border-style: solid;
 }
 .box a, p {
@@ -158,7 +158,7 @@ ion-icon {
         padding-left: 0%;
     }
     .box2 {
-        width: 75%;
+        width: 85%;
     }
    
 }
