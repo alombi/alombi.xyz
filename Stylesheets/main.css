@@ -9,15 +9,27 @@ body{
     overflow-x: hidden;
 }
 h1{
-    font-size: 45px;
+    font-size: 35px;
+    font-weight: 700;
 }
-/* Navbar */
+ion-icon {
+    font-size: 26px;
+    font-weight: bold;
+  }
+.icons {
+      color:black;
+  }
 .navbar{
     display: inline;
     list-style-type: none;
     overflow: hidden;
 }
 .navbar a{
+    color: #AAAAAA;
+    font-size: smaller;
+    text-decoration: none;
+}
+#active {
     color: black;
 }
 .leftItem{
@@ -38,7 +50,7 @@ h1{
 }
 .subtitle{
     font-weight: 400;
-    margin-top: -30px;
+    margin-top: -28px;
     font-size: 22px;
 }
 .footer {
@@ -47,38 +59,66 @@ h1{
     text-decoration: none;
     text-align: center;
 }
-ion-icon {
-    font-size: 26px;
-    font-weight: bold;
-  }
-/*boxes*/
+.footer ion-icon {
+    font-size: 20px;
+}
 .box{
     background-color: #f2f2f2;
     text-align: left;
-    text-decoration: none;
-    text-emphasis: none;
     padding-bottom: 1%;
     padding-right: 5%;
     padding-left: 3%;
     padding-top: -5%;
     border-radius: 10px;
     border-width: 1px;
-    border-color: gray;
+    border-color: #333333;
     border-style: solid;
 }
-#box{
+.box a, p {
+    text-decoration: none;
+    style="color: #FE2D55; 
+    font-size: 20px;"
+}
+#boxes {
     background-color: #f2f2f2;
     text-decoration: none;
     color: #333333;
 }
+
+.box2{
+    position: relative;
+    background-color: #f2f2f2;
+    text-align: left;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #333333;
+    border-style: solid;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    padding-left: 3%;
+    padding-top: -5%;
+    display: inline-block;
+    overflow: hidden;
+    width: 40%;
+    margin-right: 9px;
+}
+.stack {
+    white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: hidden;
+  height:150px;
+}
+
 @media
 (prefers-color-scheme: dark) {
 
-  body {
+    body {
         background-color: #1C1C1E;
         color: white;
     }
-    .box{
+    .box, .box2{
         background-color: #333333;
         color: white;
     }
@@ -86,12 +126,18 @@ ion-icon {
         background-color: #1C1C1E;
     }
     .navbar a{
+        color: #AAAAAA;
+    }
+    .icons {
         color: white;
     }
-    #box{
+    #boxes{
         background-color: #333333;
         text-decoration: none;
         color: white;
+    }
+    #active {
+        color: #FFFFFF;
     }
     #transaction {
         background-color: #191919;
@@ -103,6 +149,10 @@ ion-icon {
         padding-left: 5%;
         padding-right: 5%;
     }
+    .box2 {
+        width: 75%;
+    }
+   
 }
 @media (max-width: 350px) {
     p{
