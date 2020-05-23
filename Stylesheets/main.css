@@ -151,7 +151,9 @@ ion-icon {
         padding-right: 5%;
     }
     header {
-        padding-right: 5%;    }
+        padding-right: 3%;
+        padding-left: 0%;
+    }
     .box2 {
         width: 75%;
     }
