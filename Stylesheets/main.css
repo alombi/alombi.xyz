@@ -91,7 +91,7 @@ ion-icon {
     text-align: left;
     border-radius: 10px;
     border-width: 1px;
-    border-color: #333333;
+    border-color: #f2f2f2;
     border-style: solid;
     padding-bottom: 1%;
     padding-right: 5%;
@@ -121,6 +121,7 @@ ion-icon {
     .box, .box2{
         background-color: #333333;
         color: white;
+        border-color: #333333;
     }
     p{
         background-color: #1C1C1E;
