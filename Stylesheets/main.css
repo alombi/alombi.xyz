@@ -1,5 +1,5 @@
 body{
-    background-color: #FFFFFF;
+    background-color: #f2f2f2;
     color: #333333;
     text-align: center;
     font-family: system-ui;
@@ -63,7 +63,7 @@ ion-icon {
     font-size: 20px;
 }
 .box{
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     text-align: left;
     padding-bottom: 1%;
     padding-right: 5%;
@@ -71,26 +71,25 @@ ion-icon {
     padding-top: -5%;
     border-radius: 10px;
     border-width: 1px;
-    border-color: #f2f2f2;
+    border-color: #FFFFFF;
     border-style: solid;
 }
 .box a, p {
     text-decoration: none;
-    style="color: #FE2D55; 
 }
 #boxes {
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     text-decoration: none;
     color: #333333;
 }
 
 .box2{
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     text-align: left;
     border-radius: 10px;
     border-width: 1px;
-    border-color: #f2f2f2;
+    border-color: #FFFFFF;
     border-style: solid;
     padding-bottom: 1%;
     padding-right: 5%;
