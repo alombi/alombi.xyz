@@ -148,7 +148,10 @@ ion-icon {
 @media (max-width: 600px) {
     body {
         padding-left: 5%;
-        padding-right: 0%;
+        padding-right: 5%;
+    }
+    header {
+        padding-right: 5%;
     }
     .box2 {
         width: 75%;
