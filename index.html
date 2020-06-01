@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="Stylesheets/main.css">
 <link rel="stylesheet" href="Stylesheets/secondary.css">
 <title>alombi</title>
+<script src="main.js"></script>
 <style>
     @media (max-width: 600px) {
     body {
@@ -15,20 +16,34 @@
     }
 </style>
 </head>
+<div id="navbar">
+    <ul class="navbar">
+        <li class="rightItem"><button onclick="closeNav()"><ion-icon name="close-outline"></ion-icon></button></li>
+    </ul>
+    <br>
+    <div style="text-align: center; font-size: 20px;" class="navbar">
+        <br>
+    <a id="active" href="index.html"><p>Home</p></a>
+    <a href="news.html"><p>News</p></a>
+    <a href="projects.html"><p>Projects</p></a>
+    <a href="blog.html"><p>Blog</p></a>
+    </div>  
+</div>
+<div id="page">
 <header>
     <ul class="navbar" id="top">
         <li class="leftItem"><a id="active" href="index.html"> alombi</a></li>
-        <li class="rightItem"><a href="projects.html">Projects</a></li>
-        <li class="rightItem"><a href="blog.html">Blog</a></li>
+        <li class="rightItem"><button onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></button></li>
     </ul>
 
-    </div>
-        <h1>alombi</h1>
-        <h2 class="subtitle">Developer, Student</h2>
-        <hr>
-        </header>
-        <body>
-            <div style="text-align: left;">
+    <h1>alombi</h1>
+    <h2 class="subtitle">Developer, Student</h2>
+    <hr>
+</header>
+
+<body>
+            
+    <div style="text-align: left;">
                 <table>
                     <tr>
                         <td><ion-icon name="star"></ion-icon></td>
@@ -49,7 +64,7 @@
                 </tr>
             </table>
         
-           <div class="stack">
+        <div class="stack">
             <div class="box2">
                 <a href="post-2.html" style="text-decoration: none;">
                     <h4 style="color: dodgerblue; font-size: 17px;">SpaceWars published</h4>
@@ -71,7 +86,7 @@
                 </a>
             </div>
             <p><a style="color: #419CFF; text-decoration: none;" href="news.html">See more</a></p>
-            </div>
+        </div>
 
             <table>
                 <tr>
@@ -101,7 +116,7 @@
                     </a>
                 </div>
                 <p><a style="color: #419CFF; text-decoration: none;" href="resources.html">See more</a></p>
-                </div>
+            </div>
 
             <table>
                 <tr>
@@ -110,11 +125,12 @@
                 </tr>
             </table>
             <p>I'm an italian student who makes stuff and develop in his free time. I'm an open-source supporter, since most of my knoledge becomes from GitHub projects and YouTube videos. <br> Feel free to contact me for feedbacks, assistance about my work or anything else. Twitter and Reddit DMs are open.</p>
-            
+    </div>
         <p><br></p>
     <p class="footer">© 2020 alombi<br>
       <a class="footer" href="https://github.com/alombi"><ion-icon name="logo-github" style="font-size: 20px;""></ion-icon></a> <a class="footer" href="https://twitter.com/al0mbi"><ion-icon name="logo-twitter" style="font-size: 20px; te"></ion-icon></a> <a class="footer" href="https://www.reddit.com/u/alelombi"><ion-icon name="logo-reddit" style="font-size: 20px; te"></ion-icon></a>
       <p style="font-size: 10px; text-align: center;" class="footer">Please note that I'm not affiliated with any of the products, sites or stuff that I posted in the "Resources and stuff" section. I'm just sharing some things I found useful or nice.</p>
+</div>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>

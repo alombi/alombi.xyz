@@ -5,13 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="Stylesheets/main.css">
 <link rel="stylesheet" href="Stylesheets/secondary.css">
+<script src="main.js"></script>
 <title>Projects</title>
 </head>
+<div id="navbar">
+    <ul class="navbar">
+        <li class="rightItem"><button onclick="closeNav()"><ion-icon name="close-outline"></ion-icon></button></li>
+    </ul>
+    <br>
+    <div style="text-align: center; font-size: 20px;" class="navbar">
+        <br>
+    <a href="index.html"><p>Home</p></a>
+    <a href="news.html"><p>News</p></a>
+    <a id="active" href="projects.html"><p>Projects</p></a>
+    <a href="blog.html"><p>Blog</p></a>
+    </div>  
+  </div>
+  <div id="page">
 <header>
     <ul class="navbar" id="top">
-        <li class="leftItem"><a href="index.html"> alombi</a></li>
-        <li class="rightItem"><a id="active" href="projects.html">Projects</a></li>
-        <li class="rightItem"><a href="blog.html">Blog</a></li>
+        <li class="leftItem"><a id="active" href="index.html"> alombi</a></li>
+        <li class="rightItem"><button onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></button></li>
     </ul>
 </header>
 <body>
@@ -43,11 +57,11 @@
                     <p id="boxes" style="color: gray; font-weight: bold; font-size: 14px;">iOS 12 and 13 and iPadOS 12 and 13</p>
                 </a>
             </div>
-        </div>
 
         <p><br></p>
     <p class="footer">© 2020 alombi<br>
       <a class="footer" href="https://github.com/alombi"><ion-icon name="logo-github" style="font-size: 20px;""></ion-icon></a> <a class="footer" href="https://twitter.com/al0mbi"><ion-icon name="logo-twitter" style="font-size: 20px; te"></ion-icon></a> <a class="footer" href="https://www.reddit.com/u/alelombi"><ion-icon name="logo-reddit" style="font-size: 20px; te"></ion-icon></a>
+    </div>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
