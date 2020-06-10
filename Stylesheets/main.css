@@ -105,6 +105,7 @@ ion-icon {
     display: inline-block;
     overflow: hidden;
     width: 40%;
+    height: 80%;
     margin-right: 9px;
 }
 .stack {
@@ -113,10 +114,9 @@ ion-icon {
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     overflow-y: hidden;
-    height:150px;
+    height:120px;
 }
 .stack::-webkit-scrollbar { 
-    /* This is the magic bit */
     display: none;
   }
 @media
