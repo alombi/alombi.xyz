@@ -119,6 +119,13 @@ ion-icon {
 .stack::-webkit-scrollbar { 
     display: none;
   }
+img, video {
+    height:50%;
+    width:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 @media
 (prefers-color-scheme: dark) {
 
@@ -165,6 +172,13 @@ ion-icon {
     .box2 {
         width: 85%;
     }
+    img{
+        max-width: 100%;
+        height:auto;
+        margin-right:auto;
+        margin-left:auto;
+        display:block;
+      }
    
 }
 @media (max-width: 350px) {
