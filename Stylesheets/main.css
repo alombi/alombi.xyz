@@ -88,6 +88,10 @@ ion-icon {
     width: 40%;
     margin-right: 4px;
     margin-bottom: 20px;
+    transition: transform .2s;
+}
+.box:hover{
+    transform: scale(1.03);
 }
 .box a, p {
     text-decoration: none;
