@@ -88,6 +88,10 @@ ion-icon {
     width: 40%;
     margin-right: 4px;
     margin-bottom: 20px;
+    transition: transform .2s;
+}
+.box:hover{
+    transform: scale(1.03);
 }
 .box a, p {
     text-decoration: none;
@@ -95,21 +99,25 @@ ion-icon {
 }
 .smallBox{
     text-align: left;
-    padding-bottom: -1%;
-    padding-right: 2%;
-    padding-left: 2%;
-    padding-top: -1%;
-    border-radius: 20px;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-radius: 8px;
     border-width: 1px;
     border-style: solid;
     width: fit-content;
     margin-right: 4px;
     margin-bottom: 20px;
+    border-color: transparent;
 }
-.smallBox a, p {
+.smallBox a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
 }
+.smallBox p{
+    text-decoration: none;
+    font-size: 16px;
+}
+
 #boxes {
     background-color: #FFFFFF;
     text-decoration: none;
@@ -182,7 +190,7 @@ img, video {
         width: 90%;
 
     }
-   
+
 }
 @media (max-width: 350px) {
     p{
