@@ -109,6 +109,7 @@ a{
 <ul>
 <li><a href="#Introduction">Introduction</a></li>
 <li><a href="#How to implement">How to implement</a></li>
+<li><a href="#Implement 1.2">Implement Install Update (1.2)</a></li>
 <li><a href="#Special text and lists">Special text and lists</a></li>
 <li><a href="#Support badge">Support badge</a></li>
 <li><a href="#Credits">Credits</a></li>
@@ -138,6 +139,22 @@ First of all, ScreenKit is a development tool built by alombi that let the devel
 <br>
 <img src="images/screen.png" alt="">
 
+</div>
+<br>
+<div id="Implement 1.2">
+  <h2>How to implement the new Install Update screen</h2>
+  <p>With the 1.2 update, the Install Update screen has been added to ScreenKit. This screen lets the developer show the user a wonderful and fresh update prompt. <br>Due to Shortcuts app limitations, this screen must be implemented in a different way:
+<ul>
+<li>Open your shortcut and find the place where you want to place the HTML page</li>
+<li>Add a "Text" action and paste the code</li>
+<li>Add a "Encode with base64" action and put the magic variable "Text" as argument</li>
+<li>Add an "URL" action, containing <code>data:text/html;base64,</code> and the magic variable "Base64 Encoded</li>
+<li>Add an "Open URL" action</li>
+<li>Done!</li>
+</ul>
+</p>
+<br>
+<img src="images/screen1.png">
 </div>
 <br>
 <div id="Special text and lists">
