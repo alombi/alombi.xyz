@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Stylesheets/main.css">
+<link rel="stylesheet" href="Stylesheets/secondary.css">
+<title>Web Dev Resources</title>
+<script src="main.js"></script>
+<script src="smooth-scroll.js"></script>
+</head>
+<body>
+    <div id="table_of_contents">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#static" onclick="closeTable()">Static Hosting</a></li>
+            <li><a href="#backend" onclick="closeTable()">Backend Hosting</a></li>
+            <li><a href="#assets" onclick="closeTable()">Assets Hosting</a></li>
+            <li><a href="#editors" onclick="closeTable()">Code Editors</a></li>
+            <li><a href="#collab" onclick="closeTable()">Collaborative editors</a></li>
+            <li><a href="#imgs" onclick="closeTable()">Free Images</a></li>
+            <li><a href="#favicons" onclick="closeTable()">Favicons generators</a></li>
+            <li><a href="#css_anims" onclick="closeTable()">CSS animations</a></li>
+            <li><a href="#css_frameworks" onclick="closeTable()">CSS frameworks</a></li>
+        </ul>
+    </div>
+    <div id="main">
+    <h1>Web Dev Resources</h1>
+    <p class="section">A list of websites, posts, accounts and stuff that can be helpful for web development. Curated by alombi and hosted on GitHub.</p>
+
+        <button id="btn" onclick="openTable()">Open Table of Contents</button>
+        <br>
+
+    <br><hr><br>
+    <div id="static">
+        <h2 class="section">Static Hosting</h2>
+        <ul>
+            <li>GitHub pages</li>
+            <li>Netlify</li>
+            <li>Vercel</li>
+        </ul>
+    </div>
+    <div id="backend">
+        <h2 class="section">Backend Hosting</h2>
+        <ul>
+            <li>Heroku</li>
+            <li>Glitch</li>
+            <li>Cloud Ocean</li>
+        </ul>
+    </div>
+    <div id="assets">
+        <h2 class="section">Assets Hosting</h2>
+        <ul>
+            <li>GitHub</li>
+            <li>Blackblaze</li>
+        </ul>
+    </div>
+    <div id="editors">
+        <h2 class="section">Code editors</h2>
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>Atom</li>
+            <li>Sublime</li>
+            <li>Graviton</li>
+            <li>Nova <i>(coming soon)</i></li>
+        </ul>
+    </div>
+    <div id="collab">
+        <h2 class="section">Collaborative development</h2>
+        <ul>
+            <li>Glitch</li>
+            <li>Graviton Remote</li>
+        </ul>
+    </div>
+    <div id="imgs">
+        <h2 class="section">Free Images</h2>
+        <ul>
+            <li>Pexels</li>
+            <li>Unsplash</li>
+        </ul>
+    </div>
+    <div id="favicons">
+        <h2 class="section">Favicons generators</h2>
+        <ul>
+            <li>https://realfavicongenerator.net/</li>
+        </ul>
+    </div>
+    <div id="css_anims">
+        <h2 class="section">CSS animations</h2>
+        <ul>
+            <li>https://daneden.github.io/animate.css/</li>
+        </ul>
+    </div>
+    <div id="css_frameworks">
+        <h2 class="section">CSS frameworks</h2>
+        <ul>
+            <li>Bulma</li>
+            <li>Bootsrap</li>
+            <li>Tailwind</li>
+        </ul>
+    </div>
+    </div>
+</body>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+</html>
