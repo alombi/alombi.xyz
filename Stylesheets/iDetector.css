@@ -1,0 +1,162 @@
+#navbar{
+    display: none;
+}
+button{
+    border-style: none;
+    background: none;
+}
+body{
+    background-color: #f2f2f2;
+    color: #333333;
+    text-align: center;
+    font-family: system-ui;
+    padding-top: 5%;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 45px;
+    font-weight: 800;
+    color: #FF9900;
+}
+ion-icon {
+    font-size: 26px;
+    font-weight: bold;
+  }
+.icons {
+      color:black;
+  }
+.download {
+  border: 6px;
+  border-style: solid;
+  border-radius: 7px;
+  height: 25px;
+  width: 150px;
+  padding-top: 5px;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-decoration: none;
+  border-color: #FF9900;
+  background-color: #FF9900;
+  color: #f2f2f2;
+  margin: auto;
+}
+
+.download a {
+  color: white;
+  text-align: center;
+}
+.subtitle{
+    font-weight: 400;
+    margin-top: -35px;
+    font-size: 30;
+}
+.footer {
+    font-size: 15px;
+    color: #474747;
+    text-decoration: none;
+    text-align: center;
+}
+.footer ion-icon {
+    font-size: 20px;
+}
+.box{
+    background-color: #FFFFFF;
+    text-align: left;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    padding-left: 3%;
+    padding-top: -5%;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    border-style: solid;
+}
+.box a, p {
+    text-decoration: none;
+}
+#boxes {
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: #333333;
+}
+
+.box2{
+    position: relative;
+    background-color: #FFFFFF;
+    text-align: left;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    padding-left: 3%;
+    padding-top: -5%;
+    display: inline-block;
+    overflow: hidden;
+    width: 40%;
+    margin-right: 9px;
+}
+#carbon{
+    width: 100%;
+}
+.stack {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: hidden;
+    height:150px;
+}
+.stack::-webkit-scrollbar { 
+    /* This is the magic bit */
+    display: none;
+  }
+@media
+(prefers-color-scheme: dark) {
+
+    body {
+        background-color: #1C1C1E;
+        color: white;
+    }
+    .box, .box2{
+        background-color: #333333;
+        color: white;
+        border-color: #333333;
+    }
+    p{
+        background-color: #1C1C1E;
+    }
+    .icons {
+        color: white;
+    }
+    #boxes{
+        background-color: #333333;
+        text-decoration: none;
+        color: white;
+    }
+    #active {
+        color: #FF9900;
+    }
+    #transaction {
+        background-color: #191919;
+        box-shadow: none;
+    }
+}
+@media (max-width: 600px) {
+    .box2 {
+        width: 85%;
+    }
+}
+@media (max-width: 350px) {
+    p{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 37px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
