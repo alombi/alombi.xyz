@@ -1,14 +1,13 @@
-#btn{
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    background-color: chartreuse;
-    border-radius:6px;
-    font-size: 15px;
+#topnav a{
+    text-decoration: none;
+    color: #0A60FF;
 }
 #table_of_contents{
     display: none;
+}
+#table_of_contents a, h2{
+    text-align: center;
+    text-decoration: none;
 }
 ul, .section{
     text-align: left;

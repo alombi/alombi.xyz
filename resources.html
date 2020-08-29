@@ -11,25 +11,26 @@
 </head>
 <body>
     <div id="table_of_contents">
+        <a href="#" onclick="closeTable()" style="float: left;"><ion-icon name="close-outline" style="color: #0A60FF;"></ion-icon></a><br>
         <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#static" onclick="closeTable()">Static Hosting</a></li>
-            <li><a href="#backend" onclick="closeTable()">Backend Hosting</a></li>
-            <li><a href="#assets" onclick="closeTable()">Assets Hosting</a></li>
-            <li><a href="#domains" onclick="closeTable()">Free domains</a></li>
-            <li><a href="#editors" onclick="closeTable()">Code Editors</a></li>
-            <li><a href="#collab" onclick="closeTable()">Collaborative editors</a></li>
-            <li><a href="#imgs" onclick="closeTable()">Free Images</a></li>
-            <li><a href="#favicons" onclick="closeTable()">Favicons generators</a></li>
-            <li><a href="#css_anims" onclick="closeTable()">CSS animations</a></li>
-            <li><a href="#css_frameworks" onclick="closeTable()">CSS frameworks</a></li>
-        </ul>
+            <a href="#static" onclick="closeTable()">Static Hosting</a><br>
+            <a href="#backend" onclick="closeTable()">Backend Hosting</a><br>
+            <a href="#assets" onclick="closeTable()">Assets Hosting</a><br>
+            <a href="#domains" onclick="closeTable()">Free domains</a><br>
+            <a href="#editors" onclick="closeTable()">Code Editors</a><br>
+            <a href="#collab" onclick="closeTable()">Collaborative editors</a><br>
+            <a href="#imgs" onclick="closeTable()">Free Images</a><br>
+            <a href="#favicons" onclick="closeTable()">Favicons generators</a><br>
+            <a href="#css_anims" onclick="closeTable()">CSS animations</a><br>
+            <a href="#css_frameworks" onclick="closeTable()">CSS frameworks</a><br>
+    </div>
+    <div id="topnav">
+        <a href="#" onclick="openTable()" style="float: left;"><ion-icon name="menu-outline"></ion-icon></a>
+        <a href=""><ion-icon name="person-outline" style="float: right;"></ion-icon></a>
     </div>
     <div id="main">
     <h1>Web Dev Resources</h1>
     <p class="section">A list of websites, posts, accounts and stuff that can be helpful for web development. Curated by alombi and hosted on GitHub.</p>
-
-        <button id="btn" onclick="openTable()">Open Table of Contents</button>
         <br>
 
     <br><hr><br>
@@ -109,6 +110,7 @@
     </div>
     </div>
 </body>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <script>
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
