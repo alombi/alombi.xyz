@@ -5,7 +5,7 @@
 #table_of_contents{
     display: none;
 }
-#table_of_contents a, h2{
+#table_of_contents a{
     text-align: center;
     text-decoration: none;
 }
