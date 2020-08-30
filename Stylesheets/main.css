@@ -1,3 +1,4 @@
+/* resources.html stuff */
 #topnav a{
     text-decoration: none;
     color: #0A60FF;
@@ -8,26 +9,31 @@
 #table_of_contents a{
     text-align: center;
     text-decoration: none;
+    color:black;
 }
+#icon_table_of_contents{
+    color:#0A60FF;
+}
+
 ul, .section{
     text-align: left;
 }
-#navbar{
-    display: none;
-}
+
+/* don't remember what does this do */
 button{
     border-style: none;
     background: none;
 }
+
+/* general stuff */
 hr{
     border: 1px solid #474747;
 }
 body{
-    background-color: #f2f2f2;
+    background-color:rgb(249, 250, 251);
     color: #1A202C;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 5%;
     overflow-x: hidden;
 }
 p{
@@ -40,38 +46,70 @@ h1{
 ion-icon {
     font-size: 26px;
     font-weight: bold;
-  }
+}
 .icons {
       color:black;
-  }
+}
+.navbar, header {
+    padding-top:10%;
+}
+#projects,#about {
+    margin-top:15%;
+    text-align:left;
+    margin-left:-10px;
+    margin-right:-10px;
+    background-color:#f2f2f2;
+    padding-left:3%;
+    padding-right:2%;
+    padding-bottom:8%;
+    padding-top:2%;
+}
+#about{
+    margin-top:5%;
+}
+.links a{
+    text-decoration:none;
+	display: inline-block;
+    padding-bottom:15px;
+    padding-top:15px;
+    padding-left:25px;
+    padding-right:25px;
+	border-radius: 0.5rem;
+	color: white;
+	font-weight: 500;
+	margin: 16px 8px 8px;
+}
+.links a:hover{
+    box-shadow: 0 10px 15px 0 #AAAAAA
+}
+
+/* navbar in the main site (index.html etc) */
 .navbar{
-    display: inline;
-    list-style-type: none;
-    overflow: hidden;
+    align-items: center;
+	padding: 16px 32px;
 }
 .navbar a{
     color: #AAAAAA;
-    font-size: smaller;
     text-decoration: none;
+    margin: 4px;
+    padding: 8px 16px;
+    border-radius: 9px;
+    font-weight:500;
+}
+.navbar a:hover{
+    background-color:#ebecf1;
 }
 #active {
-    color: black;
+    background-color: #AAAAAA;
+    opacity: 1;
+    color:white;
 }
-.leftItem{
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 2px 10px;
-    text-decoration: none;
-}
-.rightItem {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 2px 3px;
-    text-decoration: none;
+
+/* more general stuff */
+.title{
+    margin-top: 100px;
+    font-weight:700;
+    font-size: 40px;
 }
 .subtitle{
     font-weight: 400;
@@ -83,61 +121,12 @@ ion-icon {
     color: #474747;
     text-decoration: none;
     text-align: center;
-    padding-top: 350px;
+    padding-top: 5%;
 }
 .footer ion-icon {
     font-size: 20px;
 }
-.box{
-    background-color: #FFFFFF;
-    text-align: left;
-    padding-bottom: 1%;
-    padding-right: 5%;
-    padding-left: 3%;
-    padding-top: -5%;
-    border-radius: 20px;
-    border-width: 1px;
-    border-color: #FFFFFF;
-    border-style: solid;
-    width: 40%;
-    margin-right: 4px;
-    margin-bottom: 20px;
-    transition: transform .2s;
-}
-.box:hover{
-    transform: scale(1.03);
-}
-.box a, p {
-    text-decoration: none;
-    font-size: 20px;
-}
-.smallBox{
-    text-align: left;
-    padding-right: 1%;
-    padding-left: 1%;
-    border-radius: 8px;
-    border-width: 1px;
-    border-style: solid;
-    width: fit-content;
-    margin-right: 4px;
-    margin-bottom: 20px;
-    border-color: transparent;
-}
-.smallBox a{
-    text-decoration: none;
-    font-size: 16px;
-}
-.smallBox p{
-    text-decoration: none;
-    font-size: 16px;
-}
 
-#boxes {
-    background-color: #FFFFFF;
-    text-decoration: none;
-    color: #333333;
-    margin-top: -5px;
-}
 
 img, video {
     height:50%;
@@ -145,36 +134,39 @@ img, video {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
+/* dark mode */
 @media
 (prefers-color-scheme: dark) {
-
     body {
-        background-color: #1A202C;
+        background-color: #161616;
         color: white;
     }
-    .box, .box2{
-        background-color: #1F2632;
-        color: white;
-        border-color: #1F2632;
+    #projects, #about{
+        background-color:#222;
     }
-    p{
-        background-color: #1A202C;
-    }
-    .navbar a{
-        color: #AAAAAA;
+    .footer p{
+        background-color: #161616;
     }
     .icons {
         color: white;
     }
-    #boxes{
-        background-color: #1F2632;
-        text-decoration: none;
-        color: white;
-    }
+    /* navbar index */
     #active {
-        color: #FFFFFF;
+        background-color:#6b7280;
+        opacity: 1;
     }
+    #active:hover{
+        color:white;
+    }
+    .navbar a{
+        color: #AAAAAA;
+    }
+    .navbar a:hover{
+        background-color:#1F2632;
+    }
+
     #transaction {
         background-color: #191919;
         box-shadow: none;
@@ -182,13 +174,24 @@ img, video {
     #table_of_contents a, li{
         color: white;
     }
+    #topnav a {
+        color:white;
+    }
+    #icon_table_of_contents{
+        color:white;
+    }
+    .links a:hover{
+        box-shadow: 0 10px 15px 0 #161616;
+    }
 }
+
+/* some media query */
 @media (max-width: 600px) {
     p{
         font-size: 19px;
     }
     h1{
-        font-size: 45px;
+        font-size: 40px;
     }
     .subtitle{
         font-size: 30px;
@@ -201,12 +204,19 @@ img, video {
         margin-left:auto;
         display:block;
       }
-    .box {
-        border-radius: 16px;
-        padding-bottom: 10%;
-        width: 90%;
-
-    }
+      .navbar{
+          padding-left:0px;
+          padding-right:0px;
+      }
+      .leftItem{
+          display:none;
+      }
+      .rightItem{
+          float:none;
+      }
+      #about{
+          margin-top:30%;
+      }
 
 }
 @media (max-width: 350px) {
