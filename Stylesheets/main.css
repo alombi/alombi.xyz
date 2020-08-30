@@ -1,3 +1,26 @@
+/* cards */
+.cards {
+    padding-right:1% ;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap:30px;
+}
+.card img{
+    border-radius:9px;
+    height:200px;
+    margin-left:0px;
+}
+.cards a, h3,p {
+    text-decoration:none;
+}
+.cards h3{
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: -13px;
+}
+.cards p{
+    opacity: 0.5;
+}
 /* resources.html stuff */
 #topnav a{
     text-decoration: none;
@@ -112,7 +135,7 @@ ion-icon {
     font-size: 40px;
 }
 .subtitle{
-    font-weight: 400;
+    font-weight:200;
     margin-top: -28px;
     font-size: 27px;
 }
@@ -139,9 +162,12 @@ img, video {
 /* dark mode */
 @media
 (prefers-color-scheme: dark) {
-    body {
+    body{
         background-color: #161616;
         color: white;
+    }
+    p, h1, h2,h3{
+        color:white;
     }
     #projects, #about{
         background-color:#222;
@@ -154,7 +180,7 @@ img, video {
     }
     /* navbar index */
     #active {
-        background-color:#6b7280;
+        background-color:#303030;
         opacity: 1;
     }
     #active:hover{
@@ -164,7 +190,7 @@ img, video {
         color: #AAAAAA;
     }
     .navbar a:hover{
-        background-color:#1F2632;
+        background-color:#262626;
     }
 
     #transaction {
@@ -187,6 +213,9 @@ img, video {
 
 /* some media query */
 @media (max-width: 600px) {
+    #desktop_only{
+        display:none;
+    }
     p{
         font-size: 19px;
     }
@@ -216,6 +245,9 @@ img, video {
       }
       #about{
           margin-top:30%;
+      }
+      .cards{
+        grid-template-columns:100%
       }
 
 }
