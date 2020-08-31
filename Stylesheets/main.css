@@ -49,6 +49,9 @@ button{
 }
 
 /* general stuff */
+p, h1, h2,h3{
+    color:black;
+}
 hr{
     border: 1px solid #474747;
 }
