@@ -7,7 +7,8 @@
 }
 .card img{
     border-radius:9px;
-    height:200px;
+    width: 100%;
+	height: 230px;
     margin-left:0px;
 }
 .cards a, h3,p {
@@ -85,8 +86,8 @@ ion-icon {
     margin-left:-10px;
     margin-right:-10px;
     background-color:#f2f2f2;
-    padding-left:3%;
-    padding-right:2%;
+    padding-left:6%;
+    padding-right:3%;
     padding-bottom:8%;
     padding-top:2%;
 }
@@ -251,6 +252,13 @@ img, video {
       }
       .cards{
         grid-template-columns:100%
+      }
+      .card img {
+        width: 100%;
+        height: 160px;
+      }
+      #projects{
+          padding-top:50px;
       }
 
 }
