@@ -10,6 +10,85 @@
 <script src="smooth-scroll.js"></script>
 </head>
 <body>
+
+    <div id="hosting">
+        <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
+        <h2 class="section">Static Hosting</h2>
+        <ul>
+            <li class="section">GitHub pages</li>
+            <li class="section">Netlify</li>
+            <li class="section">Vercel</li>
+        </ul>
+    
+        <h2 class="section">Backend Hosting</h2>
+        <ul>
+            <li class="section">Heroku</li>
+            <li class="section">Glitch</li>
+            <li class="section">Cloud Ocean</li>
+        </ul>
+
+        <h2 class="section">Assets Hosting</h2>
+        <ul>
+            <li class="section">GitHub</li>
+            <li class="section">Blackblaze</li>
+        </ul>
+    </div>
+
+    <div id="subdomains">
+        <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
+        <h2 class="section">Free Domains</h2>
+            <ul>
+                <li class="section">js.org</li>
+                <li class="section">mod.land</li>
+            </ul>
+    </div>
+
+    <div id="editors">
+        <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
+        <h2 class="section">Code editors</h2>
+            <ul>
+                <li class="section">Visual Studio Code</li>
+                <li class="section">Atom</li>
+                <li class="section">Sublime</li>
+                <li class="section">Graviton</li>
+                <li class="section">Nova <i>(coming soon)</i></li>
+            </ul>
+    </div>
+
+    <div id="remote">
+        <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
+        <h2 class="section">Collaborative development</h2>
+            <ul>
+                <li class="section">Glitch</li>
+                <li class="section">Graviton Remote</li>
+            </ul>
+    </div>
+
+    <div id="css">
+        <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
+        <h2 class="section">CSS animations</h2>
+            <ul>
+                <li class="section">https://daneden.github.io/animate.css/</li>
+            </ul>
+        <h2 class="section">CSS frameworks</h2>
+            <ul>
+                <li class="section">Bulma</li>
+                <li class="section">Bootsrap</li>
+                <li class="section">Tailwind</li>
+            </ul>
+        <h2 class="section">CSS Preprocessors</h2>
+            <ul>
+                <li class="section">SASS</li>
+            </ul>
+    </div>
+
+    <div id="others">
+        <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
+        <h2 class="section">Favicons generators</h2>
+            <ul>
+                <li class="section">https://realfavicongenerator.net/</li>
+            </ul>
+    </div>
     <!--<div id="table_of_contents">
         <a href="#" onclick="closeTable()" style="float: left;"><ion-icon id="icon_table_of_contents" name="close-outline"></ion-icon></a><br>
         <h2 style="text-align:center;">Table of Contents</h2>
@@ -34,115 +113,41 @@
 <h2 class="subtitle">A curated list of useful tools.</h2>
 <div id="projects">
     <div class="cards">
-
-        <a class="card" href="#" onclick="hosting()">
+        <a class="card" href="#main" onclick="hosting()">
             <img src="images/hosting.png" alt="">
             <h3>Web Hosting</h3>
             <p>Static webpages, assets and backend servers.</p>
           </a>
-          <div id="hosting">
-            <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
-            <h2 class="section">Static Hosting</h2>
-            <ul>
-                <li class="section">GitHub pages</li>
-                <li class="section">Netlify</li>
-                <li class="section">Vercel</li>
-            </ul>
-        
-            <h2 class="section">Backend Hosting</h2>
-            <ul>
-                <li class="section">Heroku</li>
-                <li class="section">Glitch</li>
-                <li class="section">Cloud Ocean</li>
-            </ul>
-    
-            <h2 class="section">Assets Hosting</h2>
-            <ul>
-                <li class="section">GitHub</li>
-                <li class="section">Blackblaze</li>
-            </ul>
-        </div>
 
-          <a class="card" href="#" onclick="subdomains()">
+          <a class="card" href="#main" onclick="subdomains()">
             <img src="images/subdomains.png" alt="">
             <h3>Free Subdomains</h3>
             <p>Subdomains for static webpages.</p>
           </a>
-          <div id="subdomains">
-            <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
-            <h2 class="section">Free Domains</h2>
-                <ul>
-                    <li class="section">js.org</li>
-                    <li class="section">mod.land</li>
-                </ul>
-        </div>
 
-          <a class="card" href="#" onclick="editors()">
+          <a class="card" href="#main" onclick="editors()">
             <img src="images/editors.png" alt="">
             <h3>Code Editors</h3>
             <p>Powerful and multi-language code editors.</p>
           </a>
-          <div id="editors">
-            <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
-            <h2 class="section">Code editors</h2>
-                <ul>
-                    <li class="section">Visual Studio Code</li>
-                    <li class="section">Atom</li>
-                    <li class="section">Sublime</li>
-                    <li class="section">Graviton</li>
-                    <li class="section">Nova <i>(coming soon)</i></li>
-                </ul>
-        </div>
 
-          <a class="card" href="#" onclick="remote()"">
+          <a class="card" href="#main" onclick="remote()"">
             <img src="images/collab.png" alt="">
             <h3>Remote coding</h3>
             <p>Powerful ways to code remotely.</p>
           </a>
-          <div id="remote">
-            <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
-            <h2 class="section">Collaborative development</h2>
-                <ul>
-                    <li class="section">Glitch</li>
-                    <li class="section">Graviton Remote</li>
-                </ul>
-        </div>
 
-          <a class="card" href="#" onclick="css()"">
+          <a class="card" href="#main" onclick="css()"">
             <img src="images/css.png" alt="">
             <h3>CSS Tools</h3>
             <p>Frameworks, libraries and tool for power-up CSS3.</p>
           </a>
-          <div id="css">
-            <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
-            <h2 class="section">CSS animations</h2>
-                <ul>
-                    <li class="section">https://daneden.github.io/animate.css/</li>
-                </ul>
-            <h2 class="section">CSS frameworks</h2>
-                <ul>
-                    <li class="section">Bulma</li>
-                    <li class="section">Bootsrap</li>
-                    <li class="section">Tailwind</li>
-                </ul>
-            <h2 class="section">CSS Preprocessors</h2>
-                <ul>
-                    <li class="section">SASS</li>
-                </ul>
-        </div>
 
-          <a class="card" href="#" onclick="others()"">
+          <a class="card" href="#main" onclick="others()"">
             <img src="images/others.png" alt="">
             <h3>Others</h3>
             <p>Others tools and stuff.</p>
           </a>
-          <div id="others">
-            <a style="float:left" href="" onclick="close()"><ion-icon name="close-outline"></ion-icon></a><br>
-            <h2 class="section">Favicons generators</h2>
-                <ul>
-                    <li class="section">https://realfavicongenerator.net/</li>
-                </ul>
-        </div>
         
         <!--
         <div id="favicons">
