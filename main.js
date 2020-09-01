@@ -13,6 +13,7 @@ function closeTable(){
     document.getElementById('topnav').style.display = 'block';
 }
 
+// Resources
 function hosting(){
     document.getElementById('main').style.opacity = 0.1;
     document.getElementById('hosting').style.display = 'block';
