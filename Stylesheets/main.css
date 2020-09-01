@@ -52,16 +52,17 @@ ul, li, .section{
 #hosting, #subdomains, #editors, #remote, #css, #others {
     display:none;
     position: fixed;
-    background-color:rgb(249, 250, 251);
-    margin-top: 50px;
-    padding-right: 20px;
-    padding-left: 5px;
-    padding-top: 5px;
-    margin-left:40%;
-    margin-right: 30%;
+    left: 50%;
+    top: 30%;
+    margin-top: -100px;
+    margin-left: -200px;  
+    background-color: white;
+    border-radius:9px;
+    padding-left: 4%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     opacity: initial;
-    border-radius: 9px;
-    
 }
 
 /* don't remember what does this do */
@@ -254,6 +255,12 @@ img, video {
     .links a:hover{
         box-shadow: 0 10px 15px 0 #161616;
     }
+    #hosting, #subdomains, #editors, #remote, #css, #others{
+        background-color: black;
+    }
+    ul, li, .section{
+        color: white;
+    }
 }
 
 /* some media query */
@@ -303,8 +310,10 @@ img, video {
           padding-top:50px;
       }
       #hosting, #subdomains, #editors, #remote, #css, #others{
-          margin-right: 0%;
-          margin-left: 20%;
+        left: 69%;
+        top: 30%;
+        margin-top: -100px;
+        margin-left: -200px;
       }
 
 }
