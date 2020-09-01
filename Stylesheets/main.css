@@ -51,9 +51,9 @@ ul, li, .section{
     position: absolute;
     background-color:rgb(249, 250, 251);
     padding-right: 20px;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-top: 5px;
-    margin-left:40%;
+    margin-left:30%;
     margin-right: 30%;
     opacity: initial;
     border-radius: 9px;
@@ -298,7 +298,7 @@ img, video {
       #projects{
           padding-top:50px;
       }
-      #hosting{
+      #hosting, #subdomains, #editors, #remote, #css, #others{
           margin-right: 0%;
           margin-left: 20%;
       }
