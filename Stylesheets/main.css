@@ -21,6 +21,11 @@
     opacity: 0.5;
 }
 /* resources.html stuff */
+#topnav{
+    padding-top: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
 #topnav a{
     text-decoration: none;
     color: #0A60FF;
@@ -37,8 +42,22 @@
     color:#0A60FF;
 }
 
-ul, .section{
+ul, li, .section{
     text-align: left;
+    color: black;
+}
+#hosting, #subdomains, #editors, #remote, #css, #others {
+    display:none;
+    position: absolute;
+    background-color:rgb(249, 250, 251);
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-left:40%;
+    margin-right: 30%;
+    opacity: initial;
+    border-radius: 9px;
+    
 }
 
 /* don't remember what does this do */
@@ -62,7 +81,7 @@ body{
     max-width: 100%;
     overflow-x: hidden;
     -ms-overflow-style: none;
-    scrollbar-width: none
+    scrollbar-width: none;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -130,7 +149,8 @@ ion-icon {
 /* navbar in the main site (index.html etc) */
 .navbar{
     align-items: center;
-	padding: 16px 32px;
+    padding: 16px 32px;
+    padding-top: 2%;
 }
 .navbar a{
     color: #AAAAAA;
@@ -255,6 +275,7 @@ img, video {
         display:block;
       }
       .navbar{
+          padding-top: 30px;
           padding-left:0px;
           padding-right:0px;
       }
@@ -276,6 +297,10 @@ img, video {
       }
       #projects{
           padding-top:50px;
+      }
+      #hosting{
+          margin-right: 0%;
+          margin-left: 20%;
       }
 
 }
