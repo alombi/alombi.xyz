@@ -9,6 +9,9 @@
 	height:150px;
     margin-left:0px;
 }
+.card img:hover{
+    opacity: 0.95;
+}
 .cards a, h3,p {
     text-decoration:none;
 }
@@ -48,7 +51,7 @@ ul, li, .section{
 }
 #hosting, #subdomains, #editors, #remote, #css, #others {
     display:none;
-    position: absolute;
+    position: fixed;
     background-color:rgb(249, 250, 251);
     margin-top: 50px;
     padding-right: 20px;
