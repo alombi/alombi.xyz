@@ -18,6 +18,7 @@
     xml.open('POST', 'https://api.github.com/gists', false)
     xml.setRequestHeader('authorization', 'token 2d0633b73403d3215a875aa71b83a63a09017c6b')
     xml.setRequestHeader('files', 'index.js')
+    xml.setRequestHeader('Access-Control-Allow-Headers', '*')
     xml.send()
     console.log(xml.response)
 }
