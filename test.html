@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+<button onclick="sendReq()">Send</button>
+
+<script>
+    const sendReq = () =>{
+    let stuff = {
+        test:"test"
+    }
+    const xml = new XMLHttpRequest();
+    xml.open('POST', 'https://api.github.com/gists', false)
+    xml.setRequestHeader('authorization', 'token 2d0633b73403d3215a875aa71b83a63a09017c6b')
+    xml.setRequestHeader('files', 'index.js')
+    xml.send()
+    console.log(xml.response)
+}
+</script>
+</body>
+</html>
