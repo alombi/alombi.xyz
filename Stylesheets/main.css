@@ -1,126 +1,6 @@
-/* cards */
-.cards {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-.card img{
-    border-radius:9px;
-    width: 90%;
-	height:150px;
-    margin-left:0px;
-}
-.card img:hover{
-    opacity: 0.95;
-}
-.cards a, h3,p {
-    text-decoration:none;
-}
-.cards h3{
-    font-size: 23px;
-    margin-top: 5px;
-    margin-bottom: -13px;
-}
-.cards p{
-    opacity: 0.5;
-}
-/* resources.html stuff */
-#topnav{
-    padding-top: 30px;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-#topnav a{
-    text-decoration: none;
-    color: #0A60FF;
-}
-#table_of_contents{
-    display: none;
-}
-#table_of_contents a{
+.title{
     text-align: center;
-    text-decoration: none;
-    color:black;
-}
-#icon_table_of_contents{
-    color:#0A60FF;
-}
-
-ul, li, .section{
-    text-align: left;
-    color: black;
-}
-#hosting, #subdomains, #editors, #remote, #css, #others {
-    display:none;
-    position: fixed;
-    left: 50%;
-    top: 30%;
-    margin-top: -100px;
-    margin-left: -200px;  
-    background-color: white;
-    border-radius:9px;
-    padding-left: 4%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    opacity: initial;
-}
-
-/* don't remember what does this do */
-button{
-    border-style: none;
-    background: none;
-}
-
-/* general stuff */
-p, h1, h2,h3{
-    color:black;
-}
-hr{
-    border: 1px solid #474747;
-}
-body{
-    background-color:rgb(249, 250, 251);
-    color: #1A202C;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    max-width: 100%;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-body::-webkit-scrollbar {
-    display: none;
-}
-p{
-    font-size: 21px;
-}
-h1{
-    font-size: 40px;
-    font-weight: 700;
-}
-ion-icon {
-    font-size: 26px;
-    font-weight: bold;
-}
-.icons {
-      color:black;
-}
-.navbar, header {
-    padding-top:10%;
-}
-#projects,#about {
-    margin-top:10%;
-    text-align:left;
-    margin-left:-10px;
-    margin-right:-10px;
-    background-color:#f2f2f2;
-    padding-left:4%;
-    padding-right:4%;
-    padding-bottom:8%;
-    padding-top:2%;
-}
-#about{
-    margin-top:5%;
+    padding-top: 20px;
 }
 .links a{
     text-decoration:none;
@@ -129,206 +9,63 @@ ion-icon {
     padding-top:15px;
     padding-left:25px;
     padding-right:25px;
-	border-radius: 0.5rem;
+	border-radius:8px;
 	color: white;
 	font-weight: 500;
 	margin: 16px 8px 8px;
 }
-.links a:hover{
-    box-shadow: 0 10px 15px 0 #AAAAAA
+.card{
+    border-radius: 14px;
+    width: 95%;
+    background-color: #E5E5EA;
 }
-.view_all{
-    text-decoration:none;
-    display: inline-block;
-    font-weight: 500;
-    opacity: 0.9;
-    background-color:#0A60FF;
-    color:white;
-    border-radius:9px;
-    padding-bottom:8px;
-    padding-top:8px;
-    padding-left:25px;
-    padding-right:25px;
+.card-title{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: 700;
 }
-
-/* navbar in the main site (index.html etc) */
-.navbar{
-    align-items: center;
-    padding: 16px 32px;
-    padding-top: 2%;
+.card-description{
+    margin-top: -10px;
+    padding-left: 10px;
+    opacity: 0.7;
 }
-.navbar a{
-    color: #AAAAAA;
-    text-decoration: none;
-    margin: 4px;
-    padding: 8px 16px;
-    border-radius: 9px;
-    font-weight:500;
-}
-.navbar a:hover{
-    background-color:#ebecf1;
-}
-#active {
-    background-color: #AAAAAA;
-    opacity: 1;
-    color:white;
-}
-
-/* more general stuff */
-.title{
-    margin-top: 100px;
+.card-footer{
+    padding-bottom: 25px;
+    padding-left: 10px;
+    margin-top: -15px;
+    opacity: 0.5;
     font-weight:700;
-    font-size: 40px;
+    font-size: 13px;
 }
-.subtitle{
-    font-weight:200;
-    margin-top: -28px;
-    font-size: 27px;
-}
-.footer {
-    font-size: 15px;
-    color: #474747;
+.card a{
     text-decoration: none;
+    color: black;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.footer{
     text-align: center;
-    padding-top: 5%;
+    color: #AAAAAA; 
+    font-size: 14px;
 }
-.footer ion-icon {
-    font-size: 20px;
-}
-
-
-img, video {
-    height:50%;
-    width:auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* dark mode */
-@media
-(prefers-color-scheme: dark) {
-    body{
-        background-color: #161616;
+@media (prefers-color-scheme: dark){
+   body{
+        background-color: #1C1C1E;
+    }
+    .card{
+        background-color: #2C2C2E;
+    }
+    .card-description, .card-footer{
         color: white;
     }
-    p, h1, h2,h3{
+    .card a{
         color:white;
-    }
-    #projects, #about{
-        background-color:#222;
-    }
-    .footer p{
-        background-color: #161616;
-    }
-    .icons {
-        color: white;
-    }
-    /* navbar index */
-    #active {
-        background-color:#303030;
-        opacity: 1;
-    }
-    #active:hover{
-        color:white;
-    }
-    .navbar a{
-        color: #AAAAAA;
-    }
-    .navbar a:hover{
-        background-color:#262626;
-    }
-    
-    #transaction {
-        background-color: #191919;
-        box-shadow: none;
-    }
-    #table_of_contents a, li{
-        color: white;
-    }
-    #topnav a {
-        color:white;
-    }
-    #icon_table_of_contents{
-        color:white;
-    }
-    .links a:hover{
-        box-shadow: 0 10px 15px 0 #161616;
-    }
-    #hosting, #subdomains, #editors, #remote, #css, #others{
-        background-color: black;
-    }
-    ul, li, .section{
-        color: white;
     }
 }
-
 /* some media query */
 @media (max-width: 600px) {
     #desktop_only{
         display:none;
-    }
-    p{
-        font-size: 19px;
-    }
-    h1{
-        font-size: 40px;
-    }
-    .subtitle{
-        font-size: 30px;
-        margin-top: -38px;
-    }
-    img{
-        max-width: 100%;
-        height:auto;
-        margin-right:auto;
-        margin-left:auto;
-        display:block;
-      }
-      .navbar{
-          padding-top: 30px;
-          padding-left:0px;
-          padding-right:0px;
-      }
-      .leftItem{
-          display:none;
-      }
-      .rightItem{
-          float:none;
-      }
-      #about{
-          margin-top:30%;
-      }
-      .cards{
-        grid-template-columns:100%
-      }
-      .card img {
-        width: 100%;
-        height:150px;
-      }
-      #projects{
-          padding-top:50px;
-      }
-      #hosting, #subdomains, #editors, #remote, #css, #others{
-        left: 69%;
-        top: 30%;
-        margin-top: -100px;
-        margin-left: -200px;
-      }
-
-}
-@media (max-width: 350px) {
-    p{
-        font-size: 17px;
-    }
-    h1{
-        font-size: 37px;
-    }
-    .subtitle{
-        font-size: 24px;
-        margin-top: -32px;
-    }
-    .navbar{
-        font-size: 12px;
     }
 }
