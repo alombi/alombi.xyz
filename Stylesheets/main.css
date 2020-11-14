@@ -1,15 +1,17 @@
 .title{
-    text-align: center;
-    padding-top: 20px;
-    font-weight: 700;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 700;
 }
 .links a{
-    text-decoration:none;
+  width:25%;
+  text-align: center;
+  text-decoration:none;
 	display: inline-block;
-    padding-bottom:15px;
-    padding-top:15px;
-    padding-left:25px;
-    padding-right:25px;
+  padding-bottom:15px;
+  padding-top:15px;
+  padding-left:23px;
+  padding-right:23px;
 	border-radius:8px;
 	color: white;
 	font-weight: 500;
