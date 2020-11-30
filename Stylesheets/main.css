@@ -4,7 +4,7 @@
   font-weight: 700;
 }
 .links a{
-  width:25%;
+  width:15%;
   text-align: center;
   text-decoration:none;
 	display: inline-block;
@@ -70,5 +70,8 @@ body::-webkit-scrollbar {
 @media (max-width: 600px) {
     #desktop_only{
         display:none;
+    }
+    .links a{
+      width:30%;
     }
 }
