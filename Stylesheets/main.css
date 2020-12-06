@@ -1,3 +1,6 @@
+body{
+  background-color:#f1f0f5;
+}
 .title{
   text-align: center;
   padding-top: 20px;
@@ -20,7 +23,8 @@
 .card{
     border-radius: 14px;
     width: 100%;
-    background-color: #E5E5EA;
+    background-color: white;
+    /* background-color: #E5E5EA; */
 }
 .card-title{
     padding-top: 10px;
