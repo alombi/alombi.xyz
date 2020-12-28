@@ -110,6 +110,7 @@ a{
 <li><a href="#Introduction">Introduction</a></li>
 <li><a href="#How to implement">How to implement</a></li>
 <li><a href="#Implement 1.2">Implement Install Update (1.2)</a></li>
+<li><a href="#Implement 1.3">Implement What's New Screen (1.3)</a></li>
 <li><a href="#Special text and lists">Special text and lists</a></li>
 <li><a href="#Support badge">Support badge</a></li>
 <li><a href="#Credits">Credits</a></li>
@@ -132,7 +133,7 @@ First of all, ScreenKit is a development tool built by alombi that let the devel
 <li>Open your shortcut and find the place where you want to place the HTML page</li>
 <li>Add a "Text" action and paste the code</li>
 <li>Add a "Set Name" action and put .html as extension (Example.html)</li>
-<li>Add a "Show web page" action.</li>
+<li>Add a "Quick Look" action.</li>
 <li>Done!</li>
 </ul>
 </p>
@@ -155,6 +156,24 @@ First of all, ScreenKit is a development tool built by alombi that let the devel
 </p>
 <br>
 <img src="images/screen1.png">
+</div>
+<br>
+<div id="Implement 1.3">
+  <h2>How to implement the What's New Screen on iOS 14</h2>
+  <p>With the iOS 14 release, the old method isn't working anymore. Implementing What's New Screens is sill possible of course, but you'll need some extra steps.</p>
+  <ul>
+    <li>First of all, create a project and export it</li>
+    <li>Open your shortcut and find the place where you want to place the HTML page</li>
+    <li>Add a "Text" action and paste the code</li>
+    <li>Add an "URL" action containing <code>data:text/html,</code> and the magic variable Text</li>
+    <li>Add a "Get contents of web page at URL" action where URL is the magic variable of the URL that you have just declared</li>
+    <li>Add a "Text" action</li>
+    <li>Copy this code <a onclick="copy()">Copy</a></li>
+    <input style="display:none" type="text" value="" id="code">
+    <li>Paste the code you copied in the Text action</li>
+    <li>Add a "Set Name" action and put .html as extension (Example.html)</li>
+    <li>Add a "Quick Look" action.</li>
+  </ul>
 </div>
 <br>
 <div id="Special text and lists">
@@ -188,9 +207,21 @@ Please don't steal the code that ScreenKit generates. Use it freely in your shor
 <p style="font-size:15px; color: #474747; text-align: center;"> ©2020 alombi</p> </p>
 </div>
 <br>
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]');
-  </script>
-<script src="smooth-scroll.js"></script>
+<script>
+  const copy = async() => {
+  let req = await fetch('https://alombi.xyz/ScreenKit.txt')
+  let text = await req.text()
+  document.getElementById("code").value = text
+  var copyText = document.getElementById("code");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}
+</script>
+  
+<script src="./smooth-scroll.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </body>
 </html>
