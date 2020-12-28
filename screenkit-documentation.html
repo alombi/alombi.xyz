@@ -99,7 +99,7 @@ a{
 
   </style>
   </head>
-  <body>
+  <body onload="putCode()">
 
     <h1>ScreenKit</h1>
     <h2 class="subtitle">Documentation and guide</h2>
@@ -208,10 +208,13 @@ Please don't steal the code that ScreenKit generates. Use it freely in your shor
 </div>
 <br>
 <script>
-  const copy = async() => {
-  let req = await fetch('https://alombi.xyz/ScreenKit.txt')
-  let text = await req.text()
-  document.getElementById("code").value = text
+  const putCode = async() =>{
+    let req = await fetch('https://alombi.xyz/ScreenKit.txt')
+    let text = await req.text()
+    console.log(text)
+    document.getElementById("code").value = text
+  }
+  const copy = () => {
   var copyText = document.getElementById("code");
   copyText.select(); 
   copyText.setSelectionRange(0, 99999);
