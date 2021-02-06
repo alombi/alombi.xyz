@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 <link rel="stylesheet" href="Stylesheets/main.css">
 <link rel="stylesheet" href="Stylesheets/secondary.css">
+<script src="main.js"></script>
 <title>alombi - Home</title>
 <script src="smooth-scroll.js"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="https://alombi.xyz/images/apple-touch-icon.png">
@@ -23,16 +24,16 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <div>
+  <div class="glassContainer">
     <h1 class="title">Welcome!</h1>
     <p>Hey! Welcome to my official website! Here's <strong>alombi</strong>, an Italian student and developer, interested in iOS, MacOS, web development and some more stuff.</p>
-    <a href="#about">Reach me out →</a>
+    <a href="#about">Reach me out →</a> | <a href="#glass" onclick="switchTheme()">Switch to <span id="theme">glass theme</span></a>
   </div>
   <br><br>
-  <div class="card-group">
-    <h2>Projects</h2>
+  <div class="card-group glassContainer">
+    <h2 id="projects">Projects</h2>
     <p>Here you can find some of my latest public projects. Enjoy!</p>
-    <h3>Web</h3>
+    <h3 class="subtitle">Web</h3>
     <div class="card">
       <a href="https://space-control-pro.herokuapp.com" target="_blank">
       <h3 class="card-title">Space Control Pro</h3>
@@ -54,7 +55,7 @@
       <p class="card-footer">Svelte and Bulma</p>
       </a>
     </div>
-    <h3>Shortcuts</h3>
+    <h3 class="subtitle">Shortcuts</h3>
     <div class="card">
       <a href="https://routinehub.co/shortcut/7812/" target="_blank">
       <h3 class="card-title">Proton</h3>
@@ -83,7 +84,7 @@
       <p class="card-footer">iOS Shortcuts</p>
       </a>
     </div>
-    <h3>Scriptable</h3>
+    <h3 class="subtitle">Scriptable</h3>
     <div class="card">
       <a href="https://richscript.alombi.xyz" target="_blank">
       <h3 class="card-title">RichScript (BETA)</h3>
@@ -100,7 +101,7 @@
     </div>
   </div>
   <br><br>
-  <div>
+  <div class="glassContainer">
     <h2 id="about">About</h2>
     <p>Based in Italy, I learn and make stuff in my free time. You can find me on these platforms
       <div class="links">

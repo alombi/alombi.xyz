@@ -1,24 +1,28 @@
 body{
-  background-color:#f1f0f5;
+    background-color:#f1f0f5;
 }
 .title{
-  text-align: center;
-  padding-top: 20px;
-  font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700;
 }
 .links a{
-  width:15%;
-  text-align: center;
-  text-decoration:none;
+    width:15%;
+    text-align: center;
+    text-decoration:none;
 	display: inline-block;
-  padding-bottom:15px;
-  padding-top:15px;
-  padding-left:23px;
-  padding-right:23px;
-	border-radius:8px;
-	color: white;
-	font-weight: 500;
-	margin: 16px 8px 8px;
+    padding-bottom:15px;
+    padding-top:15px;
+    padding-left:23px;
+    padding-right:23px;
+    border-radius:8px;
+    color: white;
+    font-weight: 500;
+    margin: 16px 8px 8px;
+}
+.links{
+    display:flex;
+    flex-wrap: wrap;
 }
 .card{
     border-radius: 14px;
@@ -78,4 +82,43 @@ body::-webkit-scrollbar {
     .links a{
       width:30%;
     }
+}
+@media(max-width:375px){
+    .links a{
+        width: 70%;
+    }
+}
+
+/* Glass theme */
+body.glass{
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    color:black;
+}
+body.glass .glassContainer{
+    background-color: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    padding:20px;
+    border-radius: 9px;
+    backdrop-filter: blur(2rem);
+    z-index: 2;
+}
+body.glass .title, body.glass strong, body.glass #about, body.glass #projects, body.glass .subtitle{
+    color:#426696;
+}
+body.glass p{
+    color:#658ec6;
+}
+body.glass h3{
+    color:#426696;
+}
+body.glass .card{
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
 }
