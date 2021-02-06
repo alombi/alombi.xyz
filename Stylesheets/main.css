@@ -85,7 +85,7 @@ body::-webkit-scrollbar {
 }
 @media(max-width:375px){
     .links a{
-        width: 70%;
+        width: 100%;
     }
 }
 
