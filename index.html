@@ -23,11 +23,11 @@
 <meta name="msapplication-config" content="https://alombi.xyz/images/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body onload="setTheme()">
   <div class="glassContainer">
     <h1 class="title">Welcome!</h1>
     <p>Hey! Welcome to my official website! Here's <strong>alombi</strong>, an Italian student and developer, interested in iOS, MacOS, web development and some more stuff.</p>
-    <a href="#about">Reach me out →</a> | <a href="#glass" onclick="switchTheme()">Switch to <span id="theme">glass theme</span></a>
+    <a href="#about">Reach me out →</a> | <a href="#glass" id="themeButton" onclick="switchTheme()">Switch to <span id="theme">glass theme</span></a>
   </div>
   <br><br>
   <div class="card-group glassContainer">

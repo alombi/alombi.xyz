@@ -105,6 +105,7 @@ body.glass .glassContainer{
     border-radius: 9px;
     backdrop-filter: blur(2rem);
     z-index: 2;
+    opacity: 0.8;
 }
 body.glass .title, body.glass strong, body.glass #about, body.glass #projects, body.glass .subtitle{
     color:#426696;
