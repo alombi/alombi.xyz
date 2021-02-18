@@ -8,7 +8,6 @@
 <meta name="og:url" content="http:/alombi.xyz"/>
 <meta name="og:site_name" content="alombi"/>
 <meta name="description" content="alombi's official website."/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 <link rel="stylesheet" href="Stylesheets/main.css">
 <link rel="stylesheet" href="Stylesheets/secondary.css">
 <script src="main.js"></script>
@@ -24,15 +23,23 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body onload="setTheme()">
+  <div class="navbar">
+    <div class="part">
+      <h3 id="logo" class="nav_item">alombi</h3><p> | </p><ion-icon onclick="switchThemeDarkLight()" id="dark_light_theme" class="nav_item" name="moon-outline"></ion-icon>
+    </div>
+    <div class="part" id="right_part">
+      <a target="_blank" href="https://github.com/alombi/alombi.github.io"><ion-icon style="margin-bottom:0px;" class="nav_item" name="logo-github"> </ion-icon></a><a href="https://resources.alombi.xyz"><ion-icon class="nav_item" name="bookmark-outline"></a><!--</ion-icon><ion-icon class="nav_item" name="text-outline"></ion-icon>-->
+    </div>
+  </div>
   <div class="glassContainer">
-    <h1 class="title">Welcome!</h1>
+    <h1 class="title">Welcome</h1>
     <p>Hey! Welcome to my official website! Here's <strong>alombi</strong>, an Italian student and developer, interested in iOS, MacOS, web development and some more stuff.</p>
-    <a href="#about">Reach me out →</a><!-- | <a href="#glass" id="themeButton" onclick="switchTheme()">Switch to <span id="theme">glass theme</span></a>-->
+    <a href="#about">Reach me out →</a><!-- | <a href="#glass" id="glass_themeButton" onclick="switchThemeGlass()">Switch to <span id="glass_theme">glass theme</span></a>-->
   </div>
   <br><br>
   <div class="card-group glassContainer">
     <h2 id="projects">Projects</h2>
-    <p>Here you can find some of my latest public projects. Enjoy!</p>
+    <p>Here you can find some of my latest public projects. For a full list, check out my <a href="https://github.com/alombi">GitHub</a> and <a href="https://routinehub.co/user/alombi">RoutineHub</a> pages. Enjoy!</p>
     <h3 class="subtitle">Web</h3>
      <div class="card">
       <a href="https://ios-settings-urls.netlify.app" target="_blank">
@@ -41,13 +48,13 @@
       <p class="card-footer">Svelte</p>
       </a>
     </div>
-    <div class="card">
+    <!-- <div class="card">
       <a href="https://space-control-pro.herokuapp.com" target="_blank">
       <h3 class="card-title">Space Control Pro</h3>
       <p class="card-description">A web app built for tracking spaceflights.</p>
       <p class="card-footer">Python and Flask</p>
       </a>
-    </div>
+    </div> -->
     <div class="card">
       <a href="https://bored.alombi.xyz" target="_blank">
       <h3 class="card-title">Bored website</h3>
