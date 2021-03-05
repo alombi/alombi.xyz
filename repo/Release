@@ -1,0 +1,12 @@
+Origin: alombi's Repo
+Label: alombi's Repo
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: Jailbreak stuff from alombi
+
+SHA256:
+ ead532c999c5bbea5bea01f9880cc67df42db9781fe3cac85d09727453f201a4 543 Packages.bz2
+ 9735e81bd77e69ca2b1a7d80602066ba51ee3a67ec1ad5ffe295e7b6768a918e 548 Packages.xz
