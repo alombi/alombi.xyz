@@ -21,11 +21,13 @@
       font-weight: 800;
       background:linear-gradient(to bottom left, #d69833, #d38f24);
       -webkit-background-clip: text;
+      background-clip:text;
       -webkit-text-fill-color: transparent;
     }
 a{
   background:linear-gradient(to bottom left, #d69833, #d38f24);
   -webkit-background-clip: text;
+  background-clip:text;
   -webkit-text-fill-color: transparent;
     }
     .subtitle {
@@ -55,6 +57,7 @@ a{
     .contents{
       background:linear-gradient(to bottom left, #d69833, #d38f24);
       -webkit-background-clip: text;
+      background-clip:text;
       -webkit-text-fill-color: transparent;
 
     }
@@ -216,10 +219,10 @@ Please don't steal the code that ScreenKit generates. Use it freely in your shor
     document.getElementById("code").value = text
   }
   const copy = () => {
-  var copyText = document.getElementById("code");
-  copyText.select(); 
-  copyText.setSelectionRange(0, 99999);
-  document.execCommand("copy");
+    var copyText = document.getElementById("code");
+    copyText.select(); 
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
 }
 </script>
   

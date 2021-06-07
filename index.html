@@ -1,135 +1,112 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:description" content="alombi's official website."/>
-<meta name="og:title" content="alombi"/>
-<meta name="og:url" content="http:/alombi.xyz"/>
-<meta name="og:site_name" content="alombi"/>
-<meta name="description" content="alombi's official website."/>
-<link rel="stylesheet" href="Stylesheets/main.css">
-<link rel="stylesheet" href="Stylesheets/secondary.css">
-<script src="main.js"></script>
-<title>alombi - Home</title>
-<script src="smooth-scroll.js"></script>
-<link rel="apple-touch-icon" sizes="180x180" href="https://alombi.xyz/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://alombi.xyz/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://alombi.xyz/images/favicon-16x16.png">
-<link rel="manifest" href="https://alombi.xyz/images/site.webmanifest">
-<link rel="shortcut icon" href="https://alombi.xyz/images/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="https://alombi.xyz/images/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta property="og:description" content="alombi's official website."/>
+   <meta name="og:title" content="alombi"/>
+   <meta name="og:url" content="http:/alombi.xyz"/>
+   <meta name="og:site_name" content="alombi"/>
+   <meta name="description" content="alombi's official website."/>
+   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+   <link rel="manifest" href="/assets/site.webmanifest">
+   <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#ff0000">
+   <link rel="shortcut icon" href="/assets/favicon.ico">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="msapplication-config" content="/assets/browserconfig.xml">
+   <meta name="theme-color" content="#ffffff">
+   <link rel="stylesheet" href="stylesheets/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <title>alombi</title>
 </head>
-<body onload="setTheme()">
-  <div class="navbar">
-    <div class="part">
-      <h3 id="logo" class="nav_item">alombi</h3><p> | </p><ion-icon onclick="switchThemeDarkLight()" id="dark_light_theme" class="nav_item" name="moon-outline"></ion-icon>
-    </div>
-    <div class="part" id="right_part">
-      <a target="_blank" href="https://github.com/alombi/alombi.github.io"><ion-icon style="margin-bottom:0px;" class="nav_item" name="logo-github"> </ion-icon></a><a href="https://resources.alombi.xyz"><ion-icon class="nav_item" name="bookmark-outline"></a><!--</ion-icon><ion-icon class="nav_item" name="text-outline"></ion-icon>-->
-    </div>
-  </div>
-  <div class="glassContainer">
-    <h1 class="title">Welcome</h1>
-    <p>Hey! Welcome to my official website! Here's <strong>alombi</strong>, an Italian student and developer, interested in iOS, MacOS, web development and some more stuff.</p>
-    <p><a href="https://alombi.xyz/repo">Jailbreak repo</a> | <a href="#about">Reach me out →</a><!-- | <a href="#glass" id="glass_themeButton" onclick="switchThemeGlass()">Switch to <span id="glass_theme">glass theme</span></a>--></p>
-  </div>
-  <br><br>
-  <div class="card-group glassContainer">
-    <h2 id="projects">Projects</h2>
-    <p>Here you can find some of my latest public projects. For a full list, check out my <a href="https://github.com/alombi">GitHub</a> and <a href="https://routinehub.co/user/alombi">RoutineHub</a> pages. Enjoy!</p>
-    <h3 class="subtitle">Jailbreak tweaks</h3>
-    <div class="card">
-      <a href="https://github.com/alombi/nyx" target="_blank">
-      <h3 class="card-title">Nyx</h3>
-      <p class="card-description">Beautiful pill widgets on your lockscreen.</p>
-      <p class="card-footer"></p>
-      </a>
-    </div>
-    <h3 class="subtitle">Web</h3>
-    <div class="card">
-      <a href="https://rh-api.alombi.xyz" target="_blank">
-      <h3 class="card-title">Unofficial RoutineHub API</h3>
-      <p class="card-description">An unofficial API that scrape the RoutineHub website and returns a lot of different informations.</p>
-      <p class="card-footer">Python</p>
-      </a>
-    </div>
-    <div class="card">
+<body>
+   <div class="fake"></div>
+   <header>
+      <div class="logo"><img src="https://avatars.githubusercontent.com/u/62696529?v=4" alt=""><h3>alombi</h3></div>
+      <div class="options">
+         <p>
+         <a href="https://github.com/alombi" target="_blank"><i class="fab fa-github"></i></a>
+         <a href="https://twitter.com/al0mbi" target="_blank"><i class="fab fa-twitter"></i></a>
+         <a target="_blank" href="https://alombi.xyz/repo">JBRepo</a>
+         </p>
+      </div>
+   </header>
+
+   <div class="title">
+      <h1 id="name">alombi</h1>
+      <h2>Student and programmer</h2>
+      <p>Hey! Welcome to my website! Here's alombi, an Italian student and programmer enjoying iOS, MacOS, web development and some more stuff.</p>
+   </div>
+
+   <!-- <div class="info">
+      <p><i class="fas fa-map-marked-alt"></i> Based in Italy</p>
+      <p><i class="fab fa-apple"></i> iOS and MacOS</p>
+      <p><i class="fab fa-node-js"></i> NodeJS</p>
+      <p><i class="fab fa-python"></i> Python</p>
+      <p><i class="fab fa-js"></i> JS, Vue and Svelte</p>
+      <p><i class="fab fa-sass"></i> CSS and SASS</p>
+   </div> -->
+
+
+   <!-- <h2>Pinned</h2>
+   <div class="pinned">
+      <div class="container">
+         <a href="" target="_blank">
+         <div>
+            <h3><i class="fas fa-code-branch"></i> </h3>
+            <p></p>
+         </div>
+         </a>
+      </div>
+   </div> -->
+
+   <h2>Latest stuff</h2>
+   <div class="container">
       <a href="https://ingv.alombi.xyz" target="_blank">
-      <h3 class="card-title">INGV earthquakes</h3>
-      <p class="card-description">A website for tracking latest earthquakes in Italy, with interactive maps.</p>
-      <p class="card-footer">Svelte and NodeJS</p>
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://ios-settings-urls.netlify.app" target="_blank">
-      <h3 class="card-title">iOS Settings URLs - Website</h3>
-      <p class="card-description">A website for easily browse between a collection of URL schemes for the iOS Settings app.</p>
-      <p class="card-footer">Svelte</p>
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://bored.alombi.xyz" target="_blank">
-      <h3 class="card-title">Bored website</h3>
-      <p class="card-description">Just a simple website for finding some activities to do while bored.</p>
-      <p class="card-footer">SCSS and vanilla JavaScript</p>
-      </a>
-    </div>
-    <h3 class="subtitle">Shortcuts</h3>
-    <div class="card">
-      <a href="https://routinehub.co/shortcut/7812/" target="_blank">
-      <h3 class="card-title">Proton</h3>
-      <p class="card-description">A simple yet powerful syntax highlighter for multiple programming languages.</p>
-      <p class="card-footer">iOS Shortcuts</p>
-      </a>
-    </div>
-    <div class="card">
+         <div>
+            <h3><i class="fas fa-code-branch"></i> Latest earthquakes in Italy</h3>
+            <p>A fast and beautiful web app for checking latest earthquakes in Italy, with interactive maps</p>
+         </div>
+         </a>
       <a href="https://routinehub.co/shortcut/5536/" target="_blank">
-      <h3 class="card-title">ScreenKit</h3>
-      <p class="card-description">A powerful developer tool built for ensure a better user experience.</p>
-      <p class="card-footer">iOS Shortcuts</p>
+         <div>
+            <h3><i class="fas fa-code-branch"></i> ScreenKit</h3>
+            <p>A powerful developers tool built for ensure a better user experience in Shortcuts.</p>
+         </div>
       </a>
-    </div>
-    <div class="card">
-      <a href="idetector.html" target="_blank">
-      <h3 class="card-title">iDetector</h3>
-      <p class="card-description">iDetector quickly finds if a service is online, offline or has some potential problems.</p>
-      <p class="card-footer">iOS Shortcuts</p>
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://alombi.xyz/airforce/" target="_blank">
-      <h3 class="card-title">AirForce</h3>
-      <p class="card-description">A powerful flight tracker built entirely in Shortcuts without any third party apps.</p>
-      <p class="card-footer">iOS Shortcuts</p>
-      </a>
-    </div>
-    <!--<h3 class="subtitle">Scriptable</h3>
-   <div class="card">
-      <a href="https://space-control-pro.herokuapp.com/more" target="_blank">
-      <h3 class="card-title">Space Control Pro widget</h3>
-      <p class="card-description">An iOS home screen widget that brings the upcoming space launch right on your home screen.</p>
-      <p class="card-footer">JavaScript and Scriptable</p>
-      </a>
-    </div>-->
-  </div>
-  <br><br>
-  <div class="glassContainer">
-    <h2 id="about">About</h2>
-    <p>Based in Italy, I learn and make stuff in my free time. You can find me on these platforms
-      <div class="links">
-        <a style="background-color: #ff4500;" target="_blank" href="https://www.reddit.com/u/alelombi">Reddit</a> <a style="background-color: #1da1f2;" target="_blank" href="https://twitter.com/al0mbi">Twitter</a> <a style="background-color: #7289da;" target="_blank" href="https://discord.com/channels/@me/719311264488095774">Discord</a> <a style="background-color: #333;" target="_blank" href="https://github.com/alombi">GitHub</a> <!--<a style="background-color: #333;"  href="https://routinehub.co/user/alombi">RoutineHub</a>-->
-    </div>
-  </div>
-  <br><br><br><br>
-  <div class="footer">
-    <p>2021 © Designed and Developed by <strong>alombi</strong>.</p>
-  </div>
+   <a href="https://github.com/alombi/rh-api/blob/master/README.md" target="_blank">
+      <div>
+         <h3><i class="fas fa-code-branch"></i> Unofficial RoutineHub API</h3>
+         <p>An unofficial API that scrapes the routinehub.co website and returns lots of data.</p>
+      </div>
+   </a>
+   <a href="https://ios-settings-urls.netlify.app" target="_blank">
+      <div>
+         <h3><i class="fas fa-code-branch"></i> iOS Settings URLS - Website</h3>
+         <p>A website for easily browse a large collection of URL schemes for the iOS Settings app.</p>
+      </div>
+   </a>
+   <a href="https://alombi.xyz/repo/depiction/web/com.alombi.nyx.html" target="_blank">
+      <div>
+         <h3><i class="fas fa-code-branch"></i> Nyx</h3>
+         <p>Beautiful pill widgets on your lockscreen - a tweak for jailbroken devices.</p>
+      </div>
+   </a>
+   <a href="https://routinehub.co/shortcut/7812/" target="_blank">
+      <div>
+         <h3><i class="fas fa-code-branch"></i> Proton</h3>
+         <p>A simple yet powerful syntax highlighter for multiple programming languages in iOS Shortcuts.</p>
+      </div>
+   </a>
+</div>
+
+
+<footer>
+   <p>Designed and developed by <b>alombi</b> - © 2021 - Open source on <a href="https://github.com/alombi/alombi.xyz">GitHub</a></p>
+</footer>
+
 </body>
-<script>
-  var scroll = new SmoothScroll('a[href*="#"]');
-</script>
-<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </html>
