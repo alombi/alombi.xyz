@@ -17,6 +17,9 @@
          opacity: 0.7;
       }
    }
+   div:hover{
+      transform: scale(1.01);
+   }
 }
 
 @media(min-width:1000px){

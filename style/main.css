@@ -114,6 +114,9 @@ header .logo img {
 .container div p {
   opacity: 0.7;
 }
+.container div:hover {
+  transform: scale(1.01);
+}
 
 @media (min-width: 1000px) {
   .container {
