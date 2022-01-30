@@ -52,17 +52,32 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  overflow-y: hidden;
 }
 .sections .section {
   background-color: #f6f6f6;
   border-radius: 10px;
   text-align: left;
   flex-grow: 2;
-  padding: 5px;
+  padding-left: 1rem;
+  padding-bottom: 20px;
 }
 .sections .section .section-title {
   font-weight: 500;
   font-size: 1.2rem;
+  margin-top: -10px;
+}
+.sections .section .section-h4 {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.sections .section .section-link {
+  color: #419CFF;
+  text-decoration: none;
+}
+.sections .section i {
+  font-size: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
