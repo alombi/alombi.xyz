@@ -1,6 +1,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: white;
+  margin: 0px;
+  overflow-x: hidden;
 }
 
 .title {
@@ -9,11 +11,9 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 35px;
+  position: static;
+  width: 100vw;
+  padding-top: 30px;
   height: 200px;
 }
 .title img {
@@ -35,32 +35,39 @@ body {
   gap: 10px;
 }
 .title .links a {
-  background-color: #333;
   border-radius: 10px;
   padding: 10px;
-  color: white;
   text-decoration: none;
+}
+.title .links #github {
+  background-color: #0000001a;
+  color: #000000;
+}
+.title .links #repo {
+  background-color: #7F51311a;
+  color: #7F5131;
 }
 
 .sections {
   background-color: white;
   color: #333;
-  padding-top: 250px;
+  padding-top: 20px;
   width: 80vw;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
   overflow-y: hidden;
+  flex-wrap: wrap;
 }
 .sections .section {
   background-color: #f6f6f6;
   border-radius: 10px;
   text-align: left;
-  flex-grow: 2;
   padding-left: 1rem;
   padding-bottom: 20px;
+  width: 45%;
 }
 .sections .section .section-title {
   font-weight: 500;
@@ -75,9 +82,19 @@ body {
 .sections .section .section-link {
   color: #419CFF;
   text-decoration: none;
+  padding: 10px;
+  background-color: #419CFF1a;
+  border-radius: 10px;
 }
 .sections .section i {
   font-size: 14px;
+}
+.sections .section .section-p {
+  padding-right: 0.5rem;
+}
+.sections .section .section-p a {
+  text-decoration: underline;
+  color: unset;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,6 +106,22 @@ body {
   .sections, body {
     background-color: black;
     color: whitesmoke;
+  }
+  .sections .section, body .section {
+    background-color: #1c1c1e;
+  }
+
+  .title .links #github {
+    color: #cacaca;
+    background-color: #cacaca1a;
+  }
+  .title .links #repo {
+    color: #8F7265;
+    background-color: #8F72651a;
+  }
+
+  .container div {
+    background-color: #1c1c1e;
   }
 }
 @media (max-width: 350px) {
