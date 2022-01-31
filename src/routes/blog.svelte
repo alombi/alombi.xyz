@@ -5,6 +5,10 @@
    let count = posts.length;
 </script>
 
+<svelte:head>
+   <title>Blog</title>
+</svelte:head>
+
 <Header show={true} lang="it" destination="/" />
 <div class="title">
    <div>
