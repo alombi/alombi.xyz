@@ -2,6 +2,10 @@
    import Header from '$lib/components/Header.svelte';
 </script>
 
+<svelte:head>
+   <title>Projects</title>
+</svelte:head>
+
 <Header show={true} lang="en" destination="/" />
 <div class="title">
    <h1>Projects</h1>

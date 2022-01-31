@@ -5,6 +5,10 @@
    let count = posts.length;
 </script>
 
+<svelte:head>
+   <title>Blog</title>
+</svelte:head>
+
 <Header show={true} lang="it" destination="/" />
 <div class="title">
    <div>
@@ -20,7 +24,7 @@
 <div class="sections posts">
 {#each posts as post}
    <div class="section post">
-      <h4 class="section-h4">{post.tag}</h4>
+      <h4 class="section-h4">{post.tag} - {post.date}</h4>
       <h2 class="section-title">{post.title}</h2>
       <p class="section-p">{@html post.desc}</p>
       <a href={post.link} class="section-link button">Leggi <i class="fas fa-chevron-right"></i></a>

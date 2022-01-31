@@ -4,6 +4,10 @@
    let lastPost = posts[0]
 </script>
 
+<svelte:head>
+   <title>alombi</title>
+</svelte:head>
+
 <Header show={false} />
 <div>
    <div class="title">
