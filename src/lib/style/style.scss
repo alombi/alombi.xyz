@@ -12,6 +12,9 @@ body{
    border-radius:10px;
 }
 .title{
+   #mobile{
+      display: none;
+   }
    background-color: #f6f6f6;
    color:#333;
    display: flex;
@@ -173,6 +176,12 @@ body{
       h1{
         margin-top: -20px; 
       }
+      #mobile{
+         display: none !important;
+      }
+      #no-mobile{
+         display: none;
+      }
    }
 }
 @media (max-width:550px) {
@@ -185,6 +194,19 @@ body{
          padding-left:10px;
          padding-bottom:30px;
          padding-top: 10px;
+      }
+   }
+   .title{
+      flex-wrap: wrap;
+      #mobile{
+         display: block;
+         padding-left: 8px;
+         padding-right: 2px;
+         margin-top:10px;
+         padding-bottom:40px
+      }
+      #no-mobile{
+         display: none;
       }
    }
 }

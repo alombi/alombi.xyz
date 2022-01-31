@@ -9,11 +9,12 @@
 <div class="title">
    <div>
       <h1>Blog</h1>
-      <h2>Non so cosa scrivere qua</h2>
+      <h2 id="no-mobile">"Così scoprì la virtù paradossale della lettura, che è quella di astrarci dal mondo per trovargli un senso."</h2>
    </div>
    <div class="posts-counter">
       <h1>{count}</h1>
    </div>
+   <h2 id="mobile">"Così scoprì la virtù paradossale della lettura, che è quella di astrarci dal mondo per trovargli un senso."</h2>
 </div>
 
 <div class="sections posts">
@@ -26,3 +27,15 @@
    </div>
 {/each}
 </div>
+
+<style>
+   @media(max-width:350px){
+      h1{
+        margin-top: 20px; 
+      }
+   }
+   h2{
+      font-size:16px;
+      font-weight:500;
+   }
+</style>
