@@ -115,8 +115,31 @@ body {
   margin-left: 10px;
 }
 
+.posts-counter {
+  background-color: #0000001a;
+  color: #000000;
+  border: 5px solid #0000001a;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.posts {
+  flex-direction: column;
+}
+.posts .post {
+  width: 80%;
+}
+
 @media (prefers-color-scheme: dark) {
-  .title {
+  .posts-counter {
+    color: #cacaca;
+    background-color: #cacaca1a;
+    border-color: #cacaca1a;
+  }
+
+  .title, .header {
     background-color: #1c1c1e;
     color: whitesmoke;
   }

@@ -2,7 +2,7 @@
    import Header from '$lib/components/Header.svelte';
 </script>
 
-<Header show={true} />
+<Header show={true} lang="en" destination="/" />
 <div class="title">
    <h1>Projects</h1>
 </div>
@@ -12,6 +12,12 @@
       <h2 class="section-title">Latest earthquakes in Italy</h2>
       <p class="section-p">A fast and beautiful web app for checking latest earthquakes in Italy, with interactive maps</p>
       <a href="https://github.com/alombi/earthquakes" target="_blank" class="section-link button">See project <i class="fas fa-external-link-alt"></i></a>
+   </div>
+   <div class="section">
+      <h4 class="section-h4">Svelte</h4>
+      <h2 class="section-title">Formula One Dashboard</h2>
+      <p class="section-p">A web application for checking the F1 championship's chart</p>
+      <a href="https://github.com/f1-championship" class="section-link button">See project <i class="fas fa-external-link-alt"></i></a>
    </div>
    <div class="section">
       <p class="section-h4">Python, JavaScript</p>
@@ -31,5 +37,14 @@
       <p class="section-p">Beautiful pill widgets on your lockscreen - a tweak for jailbroken devices.</p>
       <a href="https://github.com/alombi/nyx" target="_blank" class="section-link button">See project <i class="fas fa-external-link-alt"></i></a>
    </div>
+   <div class="section">
+
+   </div>
 </div>
-<br><br>
+
+
+<style>
+   .section:last-child{
+      background-color: inherit;
+   }
+</style>
