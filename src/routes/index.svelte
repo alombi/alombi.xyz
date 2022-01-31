@@ -21,7 +21,7 @@
       <div class="section">
          <h4 class="section-h4">English</h4>
          <h2 class="section-title">Code</h2>
-         <p class="section-p">Highlighted project: <a href="">Otium</a></p>
+         <p class="section-p">Highlighted project: <a target="_blank" href="https://github.com/alombi/f1-championship">Formula One Dashboard</a></p>
          <a class="section-link button" href="/code">Browse projects <i class="fas fa-chevron-right"></i></a>
       </div>
       <div class="section">
