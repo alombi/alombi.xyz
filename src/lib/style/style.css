@@ -1,0 +1,191 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.button {
+  color: #419CFF;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #419CFF1a;
+  border-radius: 10px;
+}
+
+.title {
+  background-color: #f6f6f6;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: static;
+  width: 100vw;
+  padding-top: 10px;
+  height: 200px;
+}
+.title img {
+  height: 110px;
+  border-radius: 50%;
+}
+.title h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.title h2 {
+  opacity: 0.6;
+  margin-top: -20px;
+  font-weight: 500;
+  font-size: 19px;
+}
+.title .links {
+  display: flex;
+  gap: 10px;
+}
+.title .links a {
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+.title .links #github {
+  background-color: #0000001a;
+  color: #000000;
+}
+.title .links #repo {
+  background-color: #7F51311a;
+  color: #7F5131;
+}
+
+.sections {
+  background-color: white;
+  color: #333;
+  padding-top: 20px;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+}
+.sections .section {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 1rem;
+  padding-bottom: 20px;
+  width: 45%;
+}
+.sections .section .section-title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: -10px;
+}
+.sections .section .section-h4 {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.sections .section i {
+  font-size: 14px;
+}
+.sections .section .section-p {
+  padding-right: 0.5rem;
+  padding-bottom: 5px;
+}
+.sections .section .section-p a {
+  text-decoration: underline;
+  color: unset;
+}
+
+.header {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+}
+.header a {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.posts-counter {
+  background-color: #0000001a;
+  color: #000000;
+  border: 5px solid #0000001a;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.posts {
+  flex-direction: column;
+}
+.posts .post {
+  width: 80%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .posts-counter {
+    color: #cacaca;
+    background-color: #cacaca1a;
+    border-color: #cacaca1a;
+  }
+
+  .title, .header {
+    background-color: #1c1c1e;
+    color: whitesmoke;
+  }
+
+  .sections, body {
+    background-color: black;
+    color: whitesmoke;
+  }
+  .sections .section, body .section {
+    background-color: #1c1c1e;
+  }
+
+  .title .links #github {
+    color: #cacaca;
+    background-color: #cacaca1a;
+  }
+  .title .links #repo {
+    color: #8F7265;
+    background-color: #8F72651a;
+  }
+
+  .container div {
+    background-color: #1c1c1e;
+  }
+}
+@media (max-width: 350px) {
+  .title {
+    flex-direction: column;
+    text-align: center;
+    flex-direction: column-reverse;
+    height: 250px;
+  }
+  .title h1 {
+    margin-top: -20px;
+  }
+}
+@media (max-width: 550px) {
+  .sections {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sections .section {
+    padding: 0px 0px;
+    width: 90vw;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
