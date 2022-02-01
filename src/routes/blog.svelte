@@ -7,6 +7,7 @@
 
 <svelte:head>
    <title>Blog</title>
+   <link rel="icon" href="./static/favicon.png" />
 </svelte:head>
 
 <Header show={true} lang="it" destination="/" />
