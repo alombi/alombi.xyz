@@ -21,7 +21,7 @@
       <h4 class="section-h4">Svelte</h4>
       <h2 class="section-title">Formula One Dashboard</h2>
       <p class="section-p">A web application for checking the F1 championship's chart</p>
-      <a href="https://github.com/f1-championship" class="section-link button">See project <i class="fas fa-external-link-alt"></i></a>
+      <a target="_blank" href="https://github.com/alombi/f1-championship" class="section-link button">See project <i class="fas fa-external-link-alt"></i></a>
    </div>
    <div class="section">
       <p class="section-h4">Python, JavaScript</p>
