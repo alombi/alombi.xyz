@@ -7,18 +7,20 @@
 
 <svelte:head>
    <title>Blog</title>
+   <link rel="icon" href="./static/favicon.png" />
 </svelte:head>
 
 <Header show={true} lang="it" destination="/" />
 <div class="title">
    <div>
       <h1>Blog</h1>
-      <h2 id="no-mobile">"Così scoprì la virtù paradossale della lettura, che è quella di astrarci dal mondo per trovargli un senso."</h2>
+      <h2 id="no-mobile">"Così scoprì la virtù paradossale della lettura, che è quella di astrarci dal mondo per trovargli un senso."<br>- Daniel Pennac
+      </h2>
    </div>
    <div class="posts-counter">
       <h1>{count}</h1>
    </div>
-   <h2 id="mobile">"Così scoprì la virtù paradossale della lettura, che è quella di astrarci dal mondo per trovargli un senso."</h2>
+   <h2 id="mobile">"Così scoprì la virtù paradossale della lettura, che è quella di astrarci dal mondo per trovargli un senso." - Daniel Pennac</h2>
 </div>
 
 <div class="sections posts">

@@ -6,6 +6,7 @@
 
 <svelte:head>
    <title>alombi</title>
+   <link rel="icon" href="./static/favicon.png" />
 </svelte:head>
 
 <Header show={false} />
