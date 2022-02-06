@@ -2,7 +2,7 @@
   title: 10 consigli dell'Universale Economica Feltrinelli
   date: 6 Febbraio 2022
 ---
-![img](/consigli-feltrinelli-i.jpeg)
+<img class="blog_image" src="/consigli-feltrinelli-i.jpeg">
 
 In occasione della promozione che Feltrinelli sta attuando in questo mese (grazie alla quale con l'acquisto di due volumi della collana Universale Economica si riceve in omaggio una coperta decorata con una copertina di un libro), ho deciso di proporre 10 titoli editi da Feltrinelli in tale collana.
 
