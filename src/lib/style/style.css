@@ -5,6 +5,17 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: #419CFF;
+  text-decoration: none;
+}
+
+img {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
 .button {
   color: #419CFF;
   text-decoration: none;
