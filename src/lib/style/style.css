@@ -17,6 +17,10 @@ a {
   display: block;
 }
 
+.blog_image_small {
+  width: 70%;
+}
+
 .button {
   color: #419CFF;
   text-decoration: none;

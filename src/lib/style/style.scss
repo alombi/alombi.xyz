@@ -14,6 +14,9 @@ a{
    margin: auto;
    display: block;
 }
+.blog_image_small{
+   width: 70%;
+}
 .button{
    color:#419CFF;
    text-decoration: none;
@@ -95,9 +98,9 @@ a{
          opacity: 0.6;
          text-transform: uppercase;
       }
-      .section-link{
+      // .section-link{
          
-      }
+      // }
       i{
          font-size: 14px;
       }
