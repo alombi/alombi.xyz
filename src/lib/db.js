@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+let supabaseUrl, supabaseKey;
 
 if (process.env.NODE_ENV === 'production') {
    // For production
