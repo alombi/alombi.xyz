@@ -8,7 +8,7 @@
       let json = await request.json()
       let request_geo = await fetch('http://ip-api.com/json/' + json.ip)
       let json_geo = await request_geo.json()
-      let location = `${json_geo.country}, ${json_geo.regionName}`;
+      let location = `${json_geo.country}, ${json_geo.regionName}, ${json_geo.city}`;
       const { data, error } = await supabase.from('unique_visitors').insert([{
          ip_address:json.ip,
          url_position:path,
