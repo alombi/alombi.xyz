@@ -16,7 +16,9 @@
       }])
       console.log(data, error)
    }
+   console.log(browser);
    if(browser){
+      console.log(cookie)
       let cookie = window.localStorage.getItem('unique');
       let path = window.location.pathname
       if(!cookie){
