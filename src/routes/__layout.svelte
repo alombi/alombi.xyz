@@ -6,9 +6,9 @@
    async function addUniqueVisitor(path){
       let request = await fetch('https://api.ipify.org?format=json')
       let json = await request.json()
-      let request_geo = await fetch('https://ip-api.com/json/' + json.ip)
-      let json_geo = await request_geo.json()
-      let location = `${json_geo.country}, ${json_geo.regionName}, ${json_geo.city}`;
+      let request_geo = await fetch('../api/' + json.ip + '_location/')
+      let location = await request_geo.json()
+      location = location.result
       const { data, error } = await supabase.from('unique_visitors').insert([{
          ip_address:json.ip,
          url_position:path,
@@ -23,6 +23,7 @@
          window.localStorage.setItem('unique', 'visited')
       }
    }
+   addUniqueVisitor('/')
 </script>
 
 <slot></slot>
