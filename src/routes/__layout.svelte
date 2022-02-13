@@ -1,42 +1,35 @@
 <script context="module">
-   import { ABSTRACT_KEY } from '$lib/env';
-   let apiKey;
-   if (process.env.NODE_ENV === 'production') {
-      apiKey = process.env.ABSTRACT_KEY
-   }else{
-      apiKey = ABSTRACT_KEY
-   }
+   import supabase from '$lib/db'
    export async function load(){
-      let request = await fetch('https://api.ipify.org?format=json')
-      let json = await request.json()
-      let request_geo = await fetch(`https://ipgeolocation.abstractapi.com/v1/?api_key=${apiKey}&ip_address=${json.ip}`)
-      let json_geo = await request_geo.json()
-      let location = `${json_geo.country}, ${json_geo.region}, ${json_geo.city}`;
-
-      return {props:{location, json}}
+      const { data, error } = await supabase.from('unique_visitors').select('ip_address')
+      return {props:{data}}
    }
-
 </script>
 
 <script>
    import "$lib/style/style.css";
-   import supabase from '$lib/db';
    import { browser } from '$app/env';
-   export let location, json
+   export let data
 
-   async function addUniqueVisitor(path){
-      const { data, error } = await supabase.from('unique_visitors').insert([{
-         ip_address:json.ip,
-         url_position:path,
-         location: location
-      }])
+   async function updateDB(){
+      let request = await fetch('../api/unique_visitors')
+      let json = await request.json()
+      console.log(json)
    }
+
    if(browser){
       let cookie = window.localStorage.getItem('unique');
-      let path = window.location.pathname
       if(!cookie){
-         addUniqueVisitor(path)
-         window.localStorage.setItem('unique', 'visited')
+         let alreadySent = false;
+         data.forEach(address => {
+            if(address.ip_address == json.ip){
+               alreadySent = true
+            }
+         });
+         if(!alreadySent){
+            updateDB()
+            window.localStorage.setItem('unique', 'visited')
+         }
       }
    }
 </script>
