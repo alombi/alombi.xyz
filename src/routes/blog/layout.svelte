@@ -3,6 +3,24 @@
 	// These props get filled in from the page's front matter
 	export let title
 	export let date
+	export let id
+	//
+	import { browser } from '$app/env';
+
+	async function updateDB(){
+		let ip_request = await fetch('https://api.ipify.org?format=json')
+      let ip_json = await ip_request.json()
+      let request = await fetch('/api/' + ip_json.ip + '_visits_' + id)
+      let res = await request.json()
+   }
+	
+	if(browser){
+		let alreadySent = window.sessionStorage.getItem(id);
+		if(!alreadySent){
+			updateDB()
+			window.sessionStorage.setItem(id, 'visited')
+		}
+	}
 </script>
 
 <svelte:head>

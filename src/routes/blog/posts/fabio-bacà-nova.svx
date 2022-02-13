@@ -1,6 +1,7 @@
 ---
   title: Fabio Bacà, Nova
   date: 1 Febbraio 2022
+  id: 2
 ---
 Nova è un libro preciso, attento e spietato. Pubblicato nel 2021 da Adelphi e scritto da Fabio Bacà, esplora la scoperta di zone oscure ed inaspettate della mente dei suoi personaggi. Nella vita di Davide, che è poi quella di tutti noi, c’è un’inquietudine, un rumore di fondo di cui Davide ignora (e non vuole scoprire) la provenienza.
 Tramite la storia si espone, con chiarezza quasi spietata, quanto di noi stessi non conosciamo, quanto non sappiamo chi veramente siamo e cosa saremmo pronti a fare.

@@ -1,6 +1,7 @@
 ---
    title: Joseph Roth, Il mercante di coralli
    date: 6 Dicembre 2021
+   id: 1
 ---
 *Il mercante di coralli* è una raccolta di racconti pubblicata da Adelphi e composta dallo scrittore austriaco Joseph Roth. I racconti apparvero in realtà in varie e diverse occasioni, pubblicati su riviste o altre pubblicazioni letterarie ed infine riunite in questa edizione.
 Non c'è un evidente filo conduttore fra le storie (in tutto otto), ognuna infatti tratta il proprio argomento e la propria trama senza un apparente elemento comune.
