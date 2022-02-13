@@ -1,6 +1,7 @@
 ---
   title: 10 consigli dell'Universale Economica Feltrinelli
   date: 6 Febbraio 2022
+  id: 3
 ---
 <img class="blog_image" src="/consigli-feltrinelli-i.jpeg">
 
