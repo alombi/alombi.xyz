@@ -2,6 +2,7 @@
    import "$lib/style/style.css";
    import supabase from '$lib/db';
    import { browser } from '$app/env';
+   import { onMount } from "svelte";
 
    async function addUniqueVisitor(path){
       let request = await fetch('https://api.ipify.org?format=json')
@@ -16,16 +17,14 @@
       }])
       console.log(data, error)
    }
-   console.log('fired')
-   console.log(browser)
-   if(browser){
+   onMount(()=>{
       let cookie = window.localStorage.getItem('unique');
       let path = window.location.pathname
       if(!cookie){
          addUniqueVisitor(path)
          window.localStorage.setItem('unique', 'visited')
       }
-   }
+   })
 </script>
 
 <slot></slot>
