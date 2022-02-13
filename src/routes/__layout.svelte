@@ -1,10 +1,17 @@
 <script context="module">
+   import { ABSTRACT_KEY } from '$lib/env';
+   let apiKey;
+   if (process.env.NODE_ENV === 'production') {
+      apiKey = process.env.ABSTRACT_KEY
+   }else{
+      apiKey = ABSTRACT_KEY
+   }
    export async function load(){
       let request = await fetch('https://api.ipify.org?format=json')
       let json = await request.json()
-      let request_geo = await fetch('http://ip-api.com/json/' + json.ip)
+      let request_geo = await fetch(`https://ipgeolocation.abstractapi.com/v1/?api_key=${apiKey}&ip_address=${json.ip}`)
       let json_geo = await request_geo.json()
-      let location = `${json_geo.country}, ${json_geo.regionName}, ${json_geo.city}`;
+      let location = `${json_geo.country}, ${json_geo.region}, ${json_geo.city}`;
 
       return {props:{location, json}}
    }
