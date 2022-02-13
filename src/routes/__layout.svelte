@@ -1,7 +1,6 @@
 <script>
    import "$lib/style/style.css";
    import supabase from '$lib/db';
-   import { browser } from '$app/env';
    import { onMount } from "svelte";
 
    async function addUniqueVisitor(path){
@@ -15,12 +14,14 @@
          url_position:path,
          location: location
       }])
-      console.log(data, error)
    }
    onMount(()=>{
+      console.log('mounted')
       let cookie = window.localStorage.getItem('unique');
+      console.log(cookie)
       let path = window.location.pathname
       if(!cookie){
+         console.log('if cookie')
          addUniqueVisitor(path)
          window.localStorage.setItem('unique', 'visited')
       }
