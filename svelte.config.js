@@ -10,6 +10,11 @@ const config = {
 	}), sveltePreprocess()],
 	kit: {
 		adapter: adapter(),
+		vite: {
+			define: {
+				'process.env': process.env,
+			}
+		}
 	}
 };
 
