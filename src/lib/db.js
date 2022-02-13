@@ -2,7 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from '$lib/env'
 
 let supabaseUrl, supabaseKey;
-
+console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV === 'production') {
    // For production
    supabaseUrl = process.env.SUPABASE_URL;
