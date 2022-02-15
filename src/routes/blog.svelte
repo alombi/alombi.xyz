@@ -8,6 +8,7 @@
 <svelte:head>
    <title>Blog</title>
    <link rel="icon" href="./static/favicon.png" />
+   <meta name="description" content="Un piccolo blog su libri, cultura e chissà cos'altro.">
 </svelte:head>
 
 <Header show={true} lang="it" destination="/" />
