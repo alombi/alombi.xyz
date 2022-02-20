@@ -30,7 +30,7 @@
             }
          });
          if(!alreadySent){
-            //updateDB()
+            updateDB()
             window.localStorage.setItem('unique', 'visited')
          }
       }
