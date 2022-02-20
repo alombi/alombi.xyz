@@ -17,7 +17,7 @@
 	if(browser){
 		let alreadySent = window.sessionStorage.getItem(id);
 		if(!alreadySent){
-			updateDB()
+			//updateDB()
 			window.sessionStorage.setItem(id, 'visited')
 		}
 	}

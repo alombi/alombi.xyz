@@ -82,6 +82,7 @@ a{
    overflow-y: hidden;
    flex-wrap:wrap;
    .section{
+      min-height: 160px;
       background-color: #f6f6f6;
       border-radius: 10px;
       text-align: left;
