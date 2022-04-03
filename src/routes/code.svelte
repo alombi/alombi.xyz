@@ -12,6 +12,12 @@
 </div>
 <div class="sections">
    <div class="section">
+      <p class="section-h4">SvelteKit and Supabase</p>
+      <h2 class="section-title">Otium</h2>
+      <p class="section-p">A free and open source book manager and bookshelf organiser</p>
+      <a href="https://github.com/alombi/otium" target="_blank" class="section-link button">See project <i class="fas fa-external-link-alt"></i></a>
+   </div>
+   <div class="section">
       <p class="section-h4">Svelte and NodeJS</p>
       <h2 class="section-title">Latest earthquakes in Italy</h2>
       <p class="section-p">A fast and beautiful web app for checking latest earthquakes in Italy, with interactive maps</p>
