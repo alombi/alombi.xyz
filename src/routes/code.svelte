@@ -18,6 +18,13 @@
       <a href="https://github.com/alombi/otium" target="_blank" class="section-link button">See project <i class="fas fa-external-link-alt"></i></a>
    </div>
    <div class="section">
+      <p class="section-h4">Typescript</p>
+      <h2 class="section-title">Weather Plugin</h2>
+      <p class="section-p">A plugin for Obsidian.md that shows current weather for a specific location in the status bar.</p>
+      <a href="https://github.com/alombi/obsidian-weather-plugin" target="_blank" class="section-link button">See project <i class="fas fa-external-link-alt"></i></a>
+   </div>
+   
+   <div class="section">
       <p class="section-h4">Svelte and NodeJS</p>
       <h2 class="section-title">Latest earthquakes in Italy</h2>
       <p class="section-p">A fast and beautiful web app for checking latest earthquakes in Italy, with interactive maps</p>
