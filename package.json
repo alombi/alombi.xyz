@@ -17,6 +17,6 @@
   "type": "module",
   "dependencies": {
     "@supabase/supabase-js": "^1.30.0",
-    "node": "^14.18.3"
+    "node": ">=16.7"
   }
 }
