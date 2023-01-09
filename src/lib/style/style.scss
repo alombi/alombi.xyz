@@ -1,226 +1,107 @@
 body{
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   background-color: white;
-   margin:0px;
-   overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1c1c1c;
+    color:white;
+    padding:10px;
+    padding-top: 45px;
+    a{
+        color:#a6da95;
+        text-decoration: none;
+        padding:8px 5px;
+        border-radius: 8px;
+
+    }
+    a:hover{
+        text-decoration: underline;
+        background-color: #a6da951a;
+    }
+    a,p{
+        font-size: 16px;
+    }
 }
-a{
-   color: #419CFF;
-   text-decoration: none;
-}
-.blog_image{
-   padding-top: 10px;
-   width: 80%;
-   margin: auto;
-   display: block;
-}
-.blog_image_small{
-   width: 70%;
-}
-.button{
-   color:#419CFF;
-   text-decoration: none;
-   padding: 10px;
-   background-color: #419CFF1a;
-   border-radius:10px;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color:#eed49f;
+    }
+    a:hover{
+        background-color:#eed49f1a ;
+        text-decoration: none;
+    }
+    div:nth-child(1){
+        margin-left: 20px;
+    }
+    div:nth-child(2){
+        margin-right: 20px;
+    }
+    .name{
+        font-weight: 600;
+    }    
 }
 .title{
-   #mobile{
-      display: none;
-   }
-   background-color: #f6f6f6;
-   color:#333;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   position: static;
-   width: 100vw;
-   padding-top: 10px;
-   height: 200px;
-   img{
-      height:110px;
-      border-radius: 50%;
-   }
-   h1{
-      font-size: 40px;
-      font-weight: 600;
-   }
-   h2{
-      opacity: 0.6;
-      margin-top:-20px;
-      font-weight: 500;
-      font-size: 19px;
-   }
-   .links{
-      display: flex;
-      gap:10px;
-      a{
-         border-radius:10px;
-         padding: 10px;
-         text-decoration: none;
-      }
-      #github{
-         background-color: #0000001a;
-         color:#000000;
-      }
-      #repo{
-         background-color: #7F51311a;
-         color:#7F5131;
-      }
-   }
+    padding-left: 30px;
+    margin-bottom: 70px;
+    h2{
+        margin-top: -15px;
+        opacity: 0.8;
+    }
 }
-.sections{
-   background-color: white;
-   color:#333;
-   padding-top:20px;
-   width: 80vw;
-   margin: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap:15px;
-   overflow-y: hidden;
-   flex-wrap:wrap;
-   .section{
-      min-height: 160px;
-      background-color: #f6f6f6;
-      border-radius: 10px;
-      text-align: left;
-      padding-left: 1rem;
-      padding-bottom: 20px;
-      width: 45%;
-      .section-title{
-         font-weight: 500;
-         font-size: 1.2rem;
-         margin-top: -10px;
-      }
-      .section-h4{
-         font-size: 0.8rem;
-         opacity: 0.6;
-         text-transform: uppercase;
-      }
-      // .section-link{
-         
-      // }
-      i{
-         font-size: 14px;
-      }
-      .section-p{
-         padding-right: 0.5rem;
-         padding-bottom:5px;
-         a{
-            text-decoration: underline;
-            color:unset;
-         }
-      }
-   }
-}
-.header{
-   position: static;
-   top:0;
-   left:0;
-   width: 100%;
-   height:50px;
-   display:flex;
-   align-items: center;
-   justify-content:space-between;
-   background-color: #f6f6f6;
-   a{
-      margin-top: 10px;
-      margin-left: 10px;
-   }
-}
-.posts-counter{
-   background-color: #0000001a;
-   color:#000000;
-   border: 5px solid #0000001a;
-   border-radius: 50%;
-   height: 100px;
-   width: 100px;
-   text-align: center;
-}
-.posts{
-   flex-direction: column;
-   .post{
-      width: 80%;
-   }
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 18px;
+    justify-content: center;
+    .box{
+        background-color: #333333;
+        padding: 5px 10px;
+        border-radius: 8px;
+        p{
+            opacity: 0.7;
+            margin-top: -20px;
+        }
+        .pill-container{
+            display: flex;
+            .pill{
+                margin-top: -5px;
+                font-size: 14px;
+                
+                opacity: 1;
+                padding: 4px 9px;
+                border-radius: 10px;
+            }
+            .svelte{
+                color: #f5a97f;
+                background-color: #f5a97f1a; 
+            }
+            .typescript{
+                color: #7dc4e4;
+                background-color: #7dc4e41a; 
+            }
+            .javascript{
+                color: #eed49f;
+                background-color: #eed49f1a;
+            }
+        }
+    }
+    .social{
+        text-align: center;
+    }
+    a:hover, a{
+        padding: 0px;
+        background-color: none;
+        color: unset;
+        text-decoration: none;
+    }
 }
 
-@media (prefers-color-scheme: dark){
-   .posts-counter{
-      color: #cacaca;
-      background-color: #cacaca1a;
-      border-color: #cacaca1a;
-   }
-   .title, .header{
-      background-color: #1c1c1e;
-      color:whitesmoke;
-   }
-   .sections, body{
-      background-color: black;
-      color: whitesmoke;
-      .section{
-         background-color: #1c1c1e;
-      }
-   }
-   .title{
-      .links{
-         #github{
-            color: #cacaca;
-            background-color: #cacaca1a;
-         }
-         #repo{
-            color:#8F7265;
-            background-color: #8F72651a;
-         }
-      }
-   }
-   .container{
-      div{
-         background-color: #1c1c1e;
-      }
-   }
+.blog_image{
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+    display: block;
 }
-@media(max-width:350px){
-   .title{
-      flex-direction: column;
-      text-align: center;
-      flex-direction: column-reverse;
-      height: 250px;
-      h1{
-        margin-top: -20px; 
-      }
-      #mobile{
-         display: none !important;
-      }
-      #no-mobile{
-         display: none;
-      }
-   }
-}
-@media (max-width:750px) {
-   .sections{
-      flex-direction: column;
-      width: 100%;
-      .section{
-         padding: 0px 0px;
-         width: 90vw;
-         padding-left:10px;
-         padding-bottom:30px;
-         padding-top: 10px;
-      }
-   }
-   .title{
-      flex-wrap: wrap;
-      #mobile{
-         display: block;
-         padding-left: 12px;
-         padding-right: 2px;
-         margin-top:12px;
-         padding-bottom:40px
-      }
-      #no-mobile{
-         display: none;
-      }
-   }
+.blog_image_small{
+    width: 70%;
 }
