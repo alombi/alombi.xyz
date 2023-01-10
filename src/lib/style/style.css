@@ -106,4 +106,13 @@ nav .name {
 
 .blog_image_small {
   width: 70%;
+}
+
+@media (max-width: 950px) {
+  nav div:nth-child(1) {
+    margin-left: 5px;
+  }
+  nav div:nth-child(2) {
+    margin-right: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */
