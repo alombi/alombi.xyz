@@ -3,6 +3,9 @@
         background-color: #1c1c1c;
         color:white;
     }
+    .box{
+        background-color: #333333;
+    }
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
@@ -60,7 +63,7 @@ nav{
     grid-gap: 18px;
     justify-content: center;
     .box{
-        background-color: #333333;
+        background-color: #f6f6f6;
         padding: 5px 10px;
         border-radius: 8px;
         p{
