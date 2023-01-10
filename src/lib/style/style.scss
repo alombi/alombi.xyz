@@ -1,8 +1,14 @@
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: #1c1c1c;
+        color:white;
+    }
+}
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #1c1c1c;
-    color:white;
     padding-top: 45px;
+    color:#1c1c1c;
+    background-color: white;
     a{
         color:#a6da95;
         text-decoration: none;
