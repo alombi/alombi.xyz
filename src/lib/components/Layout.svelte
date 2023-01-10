@@ -32,7 +32,7 @@
 	.blog-title{
         text-align: center;
         flex-direction: column;
-    	padding-bottom: 70px;
+    	padding-bottom: 30px;
 	}
 	.text{
 		width:70vw;
