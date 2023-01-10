@@ -2,6 +2,10 @@
     import Header from '$lib/components/Header.svelte';
 </script>
 
+<svelte:head>
+    <title>alombi</title>
+</svelte:head>
+
 <Header lang="en" />
 <div class="title">
     <h1>Welcome!</h1>

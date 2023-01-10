@@ -11,16 +11,17 @@
 	<meta property="og:title" content={title} />
 </svelte:head>
 
-<article>
-   <div class="title">
+<article class="text">
+   <div class="blog-title">
 		<h4>{date}</h4>
         <h1>{title}</h1>
    </div>
+   <div class="text">
+		<slot></slot>
+	</div>
 </article>
 
-<div class="text">
-	<slot></slot>
-</div>
+
 
 <style>
 	h4{
@@ -28,14 +29,16 @@
    	    opacity: 0.6;
         text-transform: uppercase;
 	}
-	.title{
+	.blog-title{
         text-align: center;
         flex-direction: column;
+    	padding-bottom: 70px;
 	}
 	.text{
 		width:70vw;
 		margin:auto;
 		font-size:17px;
+		padding-right: 10px !important;
 	}
 	@media (max-width:950px) {
 		.text{
@@ -43,7 +46,7 @@
 		}
 	}
 	@media (max-width:550px){
-		.title{
+		.blog-title{
 			flex-direction: unset;
 		}
 		h1{

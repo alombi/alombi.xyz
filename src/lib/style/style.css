@@ -2,7 +2,6 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #1c1c1c;
   color: white;
-  padding: 10px;
   padding-top: 45px;
 }
 body a {
@@ -51,6 +50,7 @@ nav .name {
 }
 
 .box-container {
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 18px;
