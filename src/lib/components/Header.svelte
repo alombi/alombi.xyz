@@ -29,11 +29,6 @@
 
 
 <style>
-@media (prefers-color-scheme: dark){
-    .fake-nav{
-        background-color: #1c1c1c;
-    }
-}
 .fake-nav{
    position: fixed;
    top:0;
@@ -53,5 +48,10 @@ nav {
    -webkit-backdrop-filter: blur(20px);
    backdrop-filter: blur(20px);
    z-index: 3;
+}
+@media (prefers-color-scheme: dark){
+    .fake-nav{
+        background-color: #1c1c1c;
+    }
 }
 </style>
