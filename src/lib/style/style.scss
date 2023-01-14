@@ -71,17 +71,21 @@ nav{
                 padding: 4px 9px;
                 border-radius: 10px;
             }
-            .svelte{
+            .orange{
                 color: #f5a97f;
                 background-color: #f5a97f1a; 
             }
-            .typescript{
+            .light-blue{
                 color: #7dc4e4;
                 background-color: #7dc4e41a; 
             }
-            .javascript{
+            .yellow{
                 color: #eed49f;
                 background-color: #eed49f1a;
+            }
+            .green{
+                color:#a6d189;
+                background-color: #a6d1891a;
             }
         }
     }
@@ -95,6 +99,9 @@ nav{
         text-decoration: none;
     }
 }
+.box-container-2{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
 .blog_image{
     padding-top: 10px;
@@ -105,6 +112,11 @@ nav{
 .blog_image_small{
     width: 70%;
 }
+
+.content{
+    padding-left: 5px;
+}
+
 
 @media (max-width:950px) {
     nav{

@@ -12,7 +12,7 @@
         <a href={url} class="name">alombi</a>
         {#if lang == 'it'}
             <a href="/it/blog">Blog</a>
-            <a href="/it/blog">Foto</a>
+            <a href="/it/progetti">Progetti</a>
         {/if}
         {#if lang == 'en'}
             <a target="_blank" rel="noreferrer" href="https://github.com/alombi">github</a>

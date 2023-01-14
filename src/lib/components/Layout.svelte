@@ -24,6 +24,9 @@
 
 
 <style>
+	h1{
+		font-size: 31px;
+	}
 	h4{
 		font-size: 0.8rem;
    	    opacity: 0.6;
@@ -37,7 +40,6 @@
 	.text{
 		width:70vw;
 		margin:auto;
-		font-size:17px;
 		padding-right: 10px !important;
 	}
 	@media (max-width:950px) {

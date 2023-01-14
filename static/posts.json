@@ -1,32 +1,27 @@
 [
    {
       "title":"La notte ed il sonno, fra Yoshimoto e Murakami",
-      "link":"/blog/posts/la-notte-ed-il-sonno",
-      "tag":"Percorsi",
+      "link":"/it/blog/la-notte-ed-il-sonno",
+      "tag":"libri",
+      "pill":"green",
       "desc":"La notte ed il sonno sono presenti in tutti questi racconti, anche se ognuno di essi parte da presupposti differenti e di conseguenza sviluppa tali temi in modi diversi. Un filo conduttore che però può essere individuato è quello di una situazione di paralisi...",
       "date":"20 Febbraio 2022",
-      "id":4
-   },
-   {
-      "title":"10 consigli dell'Universale Economica Feltrinelli",
-      "link":"blog/posts/10-consigli-universale-economica-feltrinelli-1",
-      "tag":"Consigli di lettura",
-      "desc":"In occasione della promozione che Feltrinelli sta attuando in questo mese, ho deciso di proporre 10 titoli della collana Universale Economica Feltrinelli.",
-      "date":"6 Febbraio 2022",
       "id":3
    },
    {
       "title":"Fabio Bacà, Nova",
-      "link":"blog/posts/fabio-bacà-nova",
-      "tag":"Pensieri su un libro",
+      "link":"/it/blog/fabio-bacà-nova",
+      "tag":"libri",
+      "pill":"green",
       "desc":"Nova è un libro preciso, attento e spietato. Pubblicato nel 2021 da Adelphi e scritto da Fabio Bacà, esplora la scoperta di zone oscure ed inaspettate...",
       "date":"1 Febbraio 2022",
       "id":2
    },
    {
       "title":"Joseph Roth, Il mercante di coralli",
-      "link":"/blog/posts/joseph-roth-il-mercante-di-coralli",
-      "tag":"Pensieri su un libro",
+      "link":"/it/blog/joseph-roth-il-mercante-di-coralli",
+      "tag":"libri",
+      "pill":"green",
       "desc":"Il mercante di coralli è una raccolta di racconti pubblicata da Adelphi e composta dallo scrittore austriaco Joseph Roth. I racconti apparvero in realtà in varie e diverse...",
       "date":"6 Dicembre 2021",
       "id":1
