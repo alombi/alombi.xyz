@@ -15,7 +15,7 @@
 <div class="content">
     <h2>Recently updated </h2>
     <div class="box-container">
-        <a target="_blank" rel="noreferrer" href="https://github.com/alombi/alombi.xyz">
+        <a class="box-a" target="_blank" rel="noreferrer" href="https://github.com/alombi/alombi.xyz">
             <div class="box">
                 <h4>alombi.xyz </h4>
                 <p>My personal website</p>
