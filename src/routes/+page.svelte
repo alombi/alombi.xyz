@@ -46,7 +46,7 @@
         <a target="_blank" rel="noreferrer" href="https://github.com/alombi/otium">
             <div class="box">
                 <h4>otium</h4>
-                <p>Free and open source book manager and bookshelf organiser</p>
+                <p>Book manager and bookshelf organiser</p>
                 <div class="pill-container"><p class="pill orange">sveltekit</p></div>
             </div>
         </a>
