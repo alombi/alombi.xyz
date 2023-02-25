@@ -13,7 +13,7 @@
 </div>
 
 <div class="content">
-    <h2>Recently updated </h2>
+    <h2 id="box-title">Recently updated </h2>
     <div class="box-container">
         <a class="box-a" target="_blank" rel="noreferrer" href="https://github.com/alombi/alombi.xyz">
             <div class="box">

@@ -35,7 +35,8 @@
    left:0;
    width: 100%;
    height:50px;
-   background-color: white;
+   /* background-color: white; */
+   background-color: #e6e9ef;
    opacity: .6;
    z-index:3;
 }
@@ -51,7 +52,8 @@ nav {
 }
 @media (prefers-color-scheme: dark){
     .fake-nav{
-        background-color: #1c1c1c;
+        /* background-color: #1c1c1c; */
+        background-color: #1e2030;
     }
 }
 </style>
