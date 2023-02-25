@@ -14,7 +14,7 @@
 </div>
 
 <div class="content">
-    <h2>Recenti</h2>
+    <h2 id="box-title">Recenti</h2>
     <div class="box-container box-container-2">
         {#each posts as post}
             <a href={post.link}>
