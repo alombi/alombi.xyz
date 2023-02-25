@@ -87,6 +87,9 @@ nav .name {
   color: #a6d189;
   background-color: rgba(166, 209, 137, 0.1019607843);
 }
+.box-container .box:hover {
+  opacity: 0.8;
+}
 .box-container .social {
   text-align: center;
 }
