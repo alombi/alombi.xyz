@@ -142,7 +142,7 @@ nav .name {
   body a {
     color: #a6da95;
   }
-  body a:hover {
+  body nav a:hover {
     background-color: rgba(166, 218, 149, 0.1019607843);
   }
   .box-container .box {
