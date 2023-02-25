@@ -130,7 +130,10 @@ nav .name {
   nav div:nth-child(2) {
     margin-right: 5px;
   }
-  .box-container, #box-title {
+  .box-container-2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .box-container, #box-title, .box-container-2 {
     padding-left: 0px;
   }
 }
