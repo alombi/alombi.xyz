@@ -136,6 +136,9 @@ nav{
             margin-right: 5px;
         }
     }
+    .title{
+        padding-left: 10px;
+    }
     .box-container-2{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
