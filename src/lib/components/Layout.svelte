@@ -19,6 +19,7 @@
    <div class="text">
 		<slot></slot>
 	</div>
+	<br><br>
 </article>
 
 

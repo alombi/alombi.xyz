@@ -1,6 +1,7 @@
 <script>
     export let data;
     let { posts } = data;
+    posts = posts.filter(post => post.id > 2);
 </script>
 
 <svelte:head>

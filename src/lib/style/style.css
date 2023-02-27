@@ -75,6 +75,10 @@ nav .name {
   padding: 4px 9px;
   border-radius: 10px;
 }
+.box-container .box .pill-container .red {
+  color: #ed8796;
+  background-color: rgba(237, 135, 150, 0.1019607843);
+}
 .box-container .box .pill-container .orange {
   color: #f5a97f;
   background-color: rgba(245, 169, 127, 0.1019607843);
