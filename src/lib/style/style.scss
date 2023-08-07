@@ -29,7 +29,7 @@ nav{
         //color:#40a02b;
         color:#2aa198
     }
-    a:hover{
+    a:hover, .button:hover{
         //background-color:#40a02b1a ;
         background-color:#2aa1981a;
         text-decoration: none;
@@ -43,6 +43,10 @@ nav{
     .name{
         font-weight: 600;
     }    
+}
+.button:hover{
+    background-color:#2aa1981a;
+    text-decoration: none;
 }
 .title{
     padding-left: 30px;
@@ -58,7 +62,8 @@ nav{
 .box-container{
     padding-left:15px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-gap: 18px;
     justify-content: center;
     .box{
@@ -186,9 +191,16 @@ nav{
 // BLOG
 blockquote{
     color: #6c6f85;
+    margin:50px;
+}
+em{
+    font-size: 17.3px;
 }
 .text > p{
-    font-size: 17px;
+    font-size: 17.3px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    
 }
 @media (prefers-color-scheme: dark){
     blockquote{

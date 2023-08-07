@@ -22,7 +22,7 @@ nav {
 nav a {
   color: #2aa198;
 }
-nav a:hover {
+nav a:hover, nav .button:hover {
   background-color: rgba(42, 161, 152, 0.1019607843);
   text-decoration: none;
 }
@@ -34,6 +34,11 @@ nav div:nth-child(2) {
 }
 nav .name {
   font-weight: 600;
+}
+
+.button:hover {
+  background-color: rgba(42, 161, 152, 0.1019607843);
+  text-decoration: none;
 }
 
 .title {
@@ -52,7 +57,7 @@ nav .name {
 .box-container {
   padding-left: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 18px;
   justify-content: center;
 }
@@ -161,10 +166,17 @@ nav .name {
 }
 blockquote {
   color: #6c6f85;
+  margin: 50px;
+}
+
+em {
+  font-size: 17.3px;
 }
 
 .text > p {
-  font-size: 17px;
+  font-size: 17.3px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
 }
 
 @media (prefers-color-scheme: dark) {
