@@ -9,7 +9,7 @@
 </div>
 
 <div class="content">
-    <div class="box-container">
+    <div class="box-container box-container-2">
         <a target="_blank" rel="noreferrer" href="https://github.com/alombi/earthquakes">
             <div class="box">
                 <h4>earthquakes</h4>

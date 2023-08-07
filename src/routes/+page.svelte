@@ -8,7 +8,7 @@
 </div>
 
 <div class="content">
-    <div class="box-container">
+    <div class="box-container box-container-2">
         <a href="/programmazione" class="button">
             <div class="box">
                 <h4>programmazione</h4>
