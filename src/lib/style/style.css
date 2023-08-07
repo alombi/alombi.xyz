@@ -2,10 +2,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   padding-top: 45px;
   color: black;
-  background-color: #F0F1F5;
+  background-color: #fdf6e3;
 }
 body a {
-  color: #40a02b;
+  color: #2aa198;
   text-decoration: none;
   padding: 8px 5px;
   border-radius: 8px;
@@ -20,10 +20,10 @@ nav {
   align-items: center;
 }
 nav a {
-  color: #40a02b;
+  color: #2aa198;
 }
 nav a:hover {
-  background-color: rgba(64, 160, 43, 0.1019607843);
+  background-color: rgba(42, 161, 152, 0.1019607843);
   text-decoration: none;
 }
 nav div:nth-child(1) {
@@ -57,7 +57,7 @@ nav .name {
   justify-content: center;
 }
 .box-container .box {
-  background-color: #eff1f5;
+  background-color: #eee8d5;
   padding: 5px 10px;
   border-radius: 8px;
 }
@@ -150,10 +150,10 @@ nav .name {
     color: #cad3f5;
   }
   body a {
-    color: #a6da95;
+    color: #2aa198;
   }
   body nav a:hover {
-    background-color: rgba(166, 218, 149, 0.1019607843);
+    background-color: rgba(42, 161, 152, 0.1019607843);
   }
   .box-container .box {
     background-color: #073642;

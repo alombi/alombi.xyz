@@ -36,7 +36,7 @@
    width: 100%;
    height:50px;
    /* background-color: white; */
-   background-color: #e6e9ef;
+   background-color: #eee8d5;
    opacity: .6;
    z-index:3;
 }

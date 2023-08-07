@@ -2,11 +2,12 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 45px;
     color:black;
-    background-color: #F0F1F5;
+    background-color: #fdf6e3;
     //color:#4c4f69;
     //background-color: #eff1f5;
     a{
-        color:#40a02b;
+        //color:#40a02b;
+        color:#2aa198;
         text-decoration: none;
         padding:8px 5px;
         border-radius: 8px;
@@ -25,10 +26,12 @@ nav{
     justify-content: space-between;
     align-items: center;
     a{
-        color:#40a02b;
+        //color:#40a02b;
+        color:#2aa198
     }
     a:hover{
-        background-color:#40a02b1a ;
+        //background-color:#40a02b1a ;
+        background-color:#2aa1981a;
         text-decoration: none;
     }
     div:nth-child(1){
@@ -61,7 +64,7 @@ nav{
     .box{
         // background-color: #f6f6f6;
         //background-color: #dce0e8;
-        background-color: #eff1f5;
+        background-color: #eee8d5;
         padding: 5px 10px;
         border-radius: 8px;
         p{
@@ -158,11 +161,13 @@ nav{
         background-color: #002b36;
         color:#cad3f5;
         a{
-            color:#a6da95;
+            //color:#a6da95;
+            color:#2aa198;
         }
         nav{
             a:hover{
-                background-color:#a6da951a;
+                //background-color:#a6da951a;
+                background-color:#2aa1981a;
             }
         }
     }
