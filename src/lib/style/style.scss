@@ -1,10 +1,10 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 45px;
-    // color:#1c1c1c;
-    // background-color: white;
-    color:#4c4f69;
-    background-color: #eff1f5;
+    color:black;
+    background-color: #F0F1F5;
+    //color:#4c4f69;
+    //background-color: #eff1f5;
     a{
         color:#40a02b;
         text-decoration: none;
@@ -60,7 +60,8 @@ nav{
     justify-content: center;
     .box{
         // background-color: #f6f6f6;
-        background-color: #dce0e8;
+        //background-color: #dce0e8;
+        background-color: #eff1f5;
         padding: 5px 10px;
         border-radius: 8px;
         p{
@@ -153,7 +154,8 @@ nav{
 @media (prefers-color-scheme: dark){
     body{
         // background-color: #1c1c1c;
-        background-color: #24273a;
+        //background-color: #24273a;
+        background-color: #002b36;
         color:#cad3f5;
         a{
             color:#a6da95;
@@ -167,7 +169,8 @@ nav{
     .box-container{
         .box{
             // background-color: #333333;
-            background-color: #363a4f;
+            //background-color: #363a4f;
+            background-color: #073642;
         }
     }
     

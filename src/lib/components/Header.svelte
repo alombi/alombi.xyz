@@ -53,7 +53,8 @@ nav {
 @media (prefers-color-scheme: dark){
     .fake-nav{
         /* background-color: #1c1c1c; */
-        background-color: #1e2030;
+        /* background-color: #1e2030; */
+        background-color: #073642;
     }
 }
 </style>

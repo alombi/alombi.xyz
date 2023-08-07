@@ -1,8 +1,8 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   padding-top: 45px;
-  color: #4c4f69;
-  background-color: #eff1f5;
+  color: black;
+  background-color: #F0F1F5;
 }
 body a {
   color: #40a02b;
@@ -57,7 +57,7 @@ nav .name {
   justify-content: center;
 }
 .box-container .box {
-  background-color: #dce0e8;
+  background-color: #eff1f5;
   padding: 5px 10px;
   border-radius: 8px;
 }
@@ -146,7 +146,7 @@ nav .name {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #24273a;
+    background-color: #002b36;
     color: #cad3f5;
   }
   body a {
@@ -156,7 +156,7 @@ nav .name {
     background-color: rgba(166, 218, 149, 0.1019607843);
   }
   .box-container .box {
-    background-color: #363a4f;
+    background-color: #073642;
   }
 }
 blockquote {
